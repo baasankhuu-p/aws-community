@@ -6,27 +6,20 @@ function Dinner() {
   return (
     <div
       id="dinner"
-      className="relative h-full min-h-screen flex flex-col justify-center items-center  md:flex-row md:justify-around bg-defbggray z-0"
+      className="relative h-full min-h-screen flex flex-col justify-between items-center  md:flex-row  z-0 lg:px-60"
     >
          {/* bg-defbggray */}
-      {/* <Image
-        src='https://kazhackstan.kz/abstract.svg'
-        alt="Background"
-        layout="fill"
-        objectFit='cover'
-        style={{backgroundSize:'auto 1280px'}}
-      /> */}
-        <div className="w-1/2 z-20 text-white font-medium">
+        <div className="text-center w-4/5 lg:w-1/2 md:w-3/5 md:mx-20 z-20 text-white font-medium text-xl">
           At this event, you can have dinner with influential Mongolian and
           foreign IT representatives. You'll also receive valuable guidance from
           respected experts, both local and international.
         </div>
-        <div className="w-1/2 flex flex-row justify-center z-20">
-          <Image src={dinner} className=" h-28 w-auto" />
-          <div>
-            <div>7 June 2023, Elixer</div>
-            <Image src={drinks} className=" h-52 w-auto" />
-            <div>REGISTER</div>
+        <div className="w-3/5 lg:w-1/2 py-10 md:w-3/5 md:p-0 flex flex-col lg:flex-row justify-center z-20 items-center">
+          <Image src={dinner} alt='dinner' className="w-2/3 h-1/2 lg:h-32 lg:w-1/2" />
+          <div className="lg:w-1/2">
+            <div className="text-white text-2xl font-medium ">7 June 2023, Elixer</div>
+            <Image src={drinks} alt='drinks' className="w-96" />
+            <div className="bg-orange text-gray-100 font-bold text-center rounded cursor-pointer py-1">REGISTER</div>
           </div>
       </div>
     </div>
