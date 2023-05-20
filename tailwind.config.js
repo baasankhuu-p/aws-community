@@ -30,7 +30,10 @@ module.exports = {
       },
       colors:{
         'primary':'rgb(233,73,61)',
-        'primarydark':'rgb(239 0 0)'
+        'primarydark':'rgb(239 0 0)',
+        'pink':'#ff007a',
+        'orange':'rgb(255, 153, 0)',
+        'defbggray':'#232F3E'
       },
     },
   },
