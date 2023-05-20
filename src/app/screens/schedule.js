@@ -36,9 +36,9 @@ function Schedule() {
   };
   return (
     <section id="schedules" className="relative m-h-screen  text-white flex flex-col justify-center items-center">
-      <div className= "mb-10 p-10 shadow-2xl shadow-primary w-full rounded-xl md:mx-40">
-        <h4 class="block font-futura font-bold uppercase -tracking-wider xl:text-7xl xl:tracking-normal text-left text-3xl">
-          <span class="relative top-5 block font-fugaz-one text-xl text-primary xl:left-8 xl:top-8 xl:text-3xl left-4 ">
+      <div className= "mb-10 p-10 shadow-2xl shadow-primary w-full rounded-xl md:mx-48">
+        <h4 className="block font-futura font-bold uppercase -tracking-wider xl:text-7xl xl:tracking-normal text-left text-3xl">
+          <span className="relative top-5 block font-fugaz-one text-xl text-primary xl:left-8 xl:top-8 xl:text-3xl left-4 ">
             event
           </span>
           Schedule

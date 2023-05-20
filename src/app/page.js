@@ -1,9 +1,10 @@
-import Image from "next/image";
 import Header from "./component/Header";
 import Home from "./screens/home"
 import About from "./screens/about";
 import Dinner from "./screens/dinner";
 import Schedule from "./screens/schedule";
+import Speakers from "./screens/speakers";
+import Sponsors from "./screens/sponsors";
 export default function Page() {
   return (
     <div className="bg-black min-h-screen min-w-full">
@@ -24,6 +25,8 @@ export default function Page() {
       </section>
       <About/>
       <Schedule/>
+      <Speakers/>
+      <Sponsors/>
     </div>
   );
 }
