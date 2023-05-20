@@ -17,10 +17,10 @@ export default function Nav() {
   return (
     <>
       <div className="lg:w-5/6 text-white flex flex-row justify-between lg:justify-center">
-        <div onClick={state.ChangeLn} className="flex items-center my-auto py-1 lg:py-2.5 px-4 mx-4 text-center rounded-full hover:bg-primary border-primary text-white font-medium text-lm cursor-pointer" style={{borderWidth:1}}>
+        <div onClick={state.ChangeLn} className="flex items-center my-auto py-1 lg:py-2.5 px-4 mx-4 text-center rounded-full hover:bg-primary border-primary text-white bg-black font-medium text-lm cursor-pointer" style={{borderWidth:1}}>
           {state.ln}
         </div>
-        <nav className="w-5/6 hidden md:flex flex-row justify-between rounded-full border-primary py-0.5 items-center " style={{borderWidth:1}}>
+        <nav className="w-5/6 hidden md:flex flex-row bg-black justify-between rounded-full border-primary py-0.5 items-center " style={{borderWidth:1}}>
           {navs.map(([nav, url], index) => (
             <a
               key={index}
