@@ -28,7 +28,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row my-10 justify-between">
           <div className="flex flex-col my-10 md:w-1/4 md:my-0 border-2">
             <div className=" text-white border-b-2 text-center p-1 text-2xl font-bold">
-              ТОВЧ ТАНИЛЦУУЛГА
+            A SHORT INTRODUCTION
             </div>
             <div className=" text-white text-center  p-1 text-xl font-medium my-auto">
               Since 2018, our community has expanded to over 4,000 members,
