@@ -16,8 +16,8 @@ export default function Nav() {
   }
   return (
     <>
-      <div className="lg:w-2/3 text-white flex flex-row justify-between lg:justify-center">
-        <div onClick={state.ChangeLn} className="flex items-center my-auto py-1 px-4 mx-4 text-center border-2 rounded-full hover:bg-orange border-orange bg-defbggray text-white font-medium text-sm cursor-pointer">
+      <div className="lg:w-5/6 text-white flex flex-row justify-between lg:justify-center">
+        <div onClick={state.ChangeLn} className="flex items-center my-auto py-1 lg:py-2.5 px-4 mx-4 text-center border-2 rounded-full hover:bg-orange border-orange bg-defbggray text-white font-medium text-lm cursor-pointer">
           {state.ln}
         </div>
         <nav className="w-5/6 hidden md:flex flex-row justify-between rounded-full border-2 border-orange py-0.5 items-center bg-defbggray">
@@ -25,7 +25,7 @@ export default function Nav() {
             <a
               key={index}
               href={url}
-              className="w-full text-center hover:text-orange font-bold text-xs uppercase mx-2"
+              className="w-full text-center hover:text-orange font-bold uppercase mx-1 px-4 my-2 text-lm"
             >
               {nav}
             </a>
@@ -70,7 +70,7 @@ export default function Nav() {
       )}
       <a
         href={WATCH[0]}
-        className="hidden md:block lg:px-6 md:py-2 px-2 bg-primary text-sm hover:bg-primarydark rounded-md text-white font-bold"
+        className="hidden px-2 md:block lg:px-16 md:py-2  bg-primary text-lg hover:bg-primarydark rounded-full text-white font-bold"
       >
         {WATCH[1]}
       </a>

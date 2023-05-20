@@ -17,7 +17,7 @@ export default function About() {
       <div
         className="w-4/5"
       >
-        <div className="text-white text-center">
+        <div className="text-white text-center text-2xl font-medium">
           Join us for an exciting gathering at AWS Community Day UB! We are
           delighted to announce the inaugural
           <br /> AWS Community Day UB in Mongolia, marking our official entry
@@ -26,11 +26,11 @@ export default function About() {
           international companies.
         </div>
         <div className="flex flex-col md:flex-row my-10 justify-between">
-          <div className="flex flex-col my-10 md:w-1/4 md:my-0 border-2 ">
-            <div className=" text-white border-b-2 text-center p-1">
+          <div className="flex flex-col my-10 md:w-1/4 md:my-0 border-2">
+            <div className=" text-white border-b-2 text-center p-1 text-2xl font-bold">
               ТОВЧ ТАНИЛЦУУЛГА
             </div>
-            <div className=" text-white text-center  p-1">
+            <div className=" text-white text-center  p-1 text-xl font-medium my-auto">
               Since 2018, our community has expanded to over 4,000 members,
               hosting over 30 events for cloud technology enthusiasts. We are
               excited to announce our first AWS event in Mongolia, a significant
