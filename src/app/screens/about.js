@@ -1,12 +1,22 @@
 import React from "react";
+import Deed from "../component/deed";
 
 export default function About() {
   return (
-    <div
+    <section
       id="about"
-      className="relative min-h-screen lg:mx-auto min-w-full flex flex-col justify-center items-center"
+      className="relative min-h-screen lg:mx-auto min-w-full flex flex-col justify-center items-center mt-10 md:mt-0"
+      style={{
+          backgroundImage: "url(https://kazhackstan.kz/polygon.webp)",
+          zIndex: 0,
+          overflow: "hidden",
+          backgroundSize: "100% auto",
+          backgroundPosition: "center -200px",
+          backgroundRepeat: "no-repeat",}}
     >
-      <div className="w-3/5">
+      <div
+        className="w-4/5"
+      >
         <div className="text-white text-center">
           Join us for an exciting gathering at AWS Community Day UB! We are
           delighted to announce the inaugural
@@ -15,8 +25,8 @@ export default function About() {
           participation of esteemed IT professionals from both local and
           international companies.
         </div>
-        <div className="flex flex-row my-10 justify-between">
-          <div className="flex flex-col w-1/4 border-2 bg-red-500">
+        <div className="flex flex-col md:flex-row my-10 justify-between">
+          <div className="flex flex-col my-10 md:w-1/4 md:my-0 border-2 ">
             <div className=" text-white border-b-2 text-center p-1">
               ТОВЧ ТАНИЛЦУУЛГА
             </div>
@@ -27,9 +37,11 @@ export default function About() {
               milestone for us in the country.
             </div>
           </div>
-          <div className="text-white flex flex-col w-3/4 bg-red-300">123</div>
+          <div className="text-white flex flex-col md:w-2/3">
+            <Deed />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

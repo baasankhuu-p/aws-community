@@ -35,6 +35,9 @@ module.exports = {
         'orange':'rgb(255, 153, 0)',
         'defbggray':'#232F3E'
       },
+      fontFamily: {
+        'Fugaz': ['"Fugaz One"','sans-serif']
+      }
     },
   },
   plugins: [],

@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 
 export default function Counter() {
-  var countDownDate = new Date("May 20, 2023 23:00:59").getTime();
+  var countDownDate = new Date("June 30, 2023 23:00:59").getTime();
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
@@ -31,10 +31,6 @@ export default function Counter() {
   return (
     <div className="relative">
       {days > 0 || hours > 0 || minutes > 0 || seconds > 0 ? (
-        // <>
-        //   {days > 0 ? days : "00"}ө {hours > 0 ? hours : "00"}{" "}ц
-        //   {minutes > 0 ? minutes : "00"}м {seconds > 0 ? seconds : "00"}с
-        // </>
         <div className=" flex flex-row justify-between w-2/3 items-center  font-medium">
           <div className="flex flex-col items-center justify-center p-4" style={{color:'#00a3ee'}}>
             <div className=" text-2xl">{days > 0 ? days : "00"}</div>
