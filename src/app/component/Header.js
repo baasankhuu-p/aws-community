@@ -4,7 +4,7 @@ import Nav from './Nav'
 
 function Header() {
   return (
-    <div className='fixed left-0 right-0 flex flex-row justify-between px-2 lg:px-40 items-center z-10 ' >
+    <div className='fixed left-0 right-0 flex flex-row justify-between px-2 lg:px-40 items-center z-10' >
       <Logo/>
       <Nav/>
     </div>

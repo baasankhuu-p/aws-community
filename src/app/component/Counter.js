@@ -31,20 +31,20 @@ export default function Counter() {
   return (
     <div className="relative">
       {days > 0 || hours > 0 || minutes > 0 || seconds > 0 ? (
-        <div className=" flex flex-row justify-between w-2/3 items-center  font-medium">
-          <div className="flex flex-col items-center justify-center p-4" style={{color:'#00a3ee'}}>
-            <div className="text-2xl lg:text-4xl  ">{days > 0 ? days : "00"}</div>
+        <div className=" flex flex-row justify-between w-full md:w-2/3 items-center font-medium">
+          <div className="flex flex-col items-center justify-center p-2 md:p-4" style={{color:'#00a3ee'}}>
+            <div className="text-2xl lg:text-4xl">{days > 0 ? days : "00"}</div>
             <div className="text-lg">DAYS</div>
           </div>
-          <div className="flex flex-col items-center justify-center p-4" style={{color:'#ffcf4a'}}>
+          <div className="flex flex-col items-center justify-center p-2 md:p-4" style={{color:'#ffcf4a'}}>
             <div className="text-2xl lg:text-4xl  ">{hours > 0 ? hours : "00"}{" "}</div>
             <div className="text-lg">HOURS</div>
           </div>
-          <div className="flex flex-col items-center justify-center p-4" style={{color:'#00c1c1'}}>
+          <div className="flex flex-col items-center justify-center p-2 md:p-4" style={{color:'#00c1c1'}}>
             <div className="text-2xl lg:text-4xl  ">{minutes > 0 ? minutes : "00"}</div>
             <div className="text-lg">MINUTED</div>
           </div>
-          <div className="flex flex-col items-center justify-center p-4" style={{color:'#ff6386'}}>
+          <div className="flex flex-col items-center justify-center p-2 md:p-4" style={{color:'#ff6386'}}>
             <div className="text-2xl lg:text-4xl  ">{seconds > 0 ? seconds : "00"}</div>
             <div className="text-lg">SECONDS</div>
           </div>

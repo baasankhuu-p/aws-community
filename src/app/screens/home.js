@@ -4,9 +4,9 @@ import Image from "next/image";
 import aws_ub from "../assets/img/all/community-aws.png";
 function Home() {
   return (
-    <div id="home" className="relative h-full min-h-screen flex flex-col justify-center md:flex-row md:justify-around items-center z-0 ">
+    <div id="home" className="relative h-full min-h-screen flex flex-col justify-center md:flex-row md:justify-around items-center z-0  py-10 md:py-0">
       {/* bg-defbggray */}
-      <div className="lg:mx-auto w-4/5 lg:w-2/5 z-30">
+      <div className="lg:mx-auto w-5/6 lg:w-2/5 z-30">
         <Counter />
         <div className=" text-5xl font-bold text-white my-10">AWS Community Day Ulaanbaatar</div>
         <div className=" text-3xl font-medium text-white my-3 italic">
