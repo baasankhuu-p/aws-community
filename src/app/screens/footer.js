@@ -3,9 +3,9 @@ import { FaLinkedinIn, FaFacebookF, FaInstagram } from "react-icons/fa";
 function Footer() {
   const abouts = [["Nabout","#"],["Nabout","#"],["Nabout","#"],["Nabout","#"]]
   return (
-    <footer className="container mx-auto py-10 xl:p-20 text-white">
-      <div className="mt-10 flex justify-center lg:justify-between">
-        <ul className="hidden flex-col gap-5 lg:flex">
+    <footer className="container mx-auto py-10 md:p-10 lg:p-20 text-white">
+      <div className="mt-10 flex justify-around lg:justify-between">
+        <ul className=" flex-col gap-5 lg:flex">
           <li className="mb-5 py-1 px-2 font-medium">
             <h5>About us</h5>
           </li>
@@ -71,7 +71,7 @@ function Footer() {
         </ul>
       </div>
       <div className="flex justify-center">
-        <div className=" flex flex-row justify-around w-1/5">
+        <div className=" w-1/2 flex flex-row justify-around md:w-1/5">
           <a
             href="#"
             className="hover:bg-primary w-25 h-25 items-center p-2 rounded-full hover:border-primary cursor-pointer"
