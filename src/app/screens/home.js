@@ -24,7 +24,7 @@ function Home() {
     }
   },[state.ln])
   return (
-    <div id="home" className="relative h-full min-h-screen flex flex-col justify-center md:flex-row md:justify-around items-center z-0  py-10 md:py-0">
+    <div id="home" className="relative h-full min-h-screen flex flex-col justify-center md:flex-row md:justify-around items-center z-0  py-20 md:py-0">
       {/* bg-defbggray */}
       <div className="lg:mx-auto w-5/6 lg:w-2/5 z-30">
         <Counter />

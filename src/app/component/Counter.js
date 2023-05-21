@@ -59,7 +59,7 @@ export default function Counter() {
     }
   }, [state.ln]);
   return (
-    <div className="relative">
+    <div className="relative md:pt-10">
       {days > 0 || hours > 0 || minutes > 0 || seconds > 0 ? (
         <div className=" flex flex-row justify-between w-full md:w-2/3 items-center font-medium">
           <div
