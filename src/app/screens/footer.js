@@ -3,7 +3,7 @@ import { FaLinkedinIn, FaFacebookF, FaInstagram } from "react-icons/fa";
 function Footer() {
   const abouts = [["Nabout","#"],["Nabout","#"],["Nabout","#"],["Nabout","#"]]
   return (
-    <footer className="container mx-auto py-10 md:p-10 lg:p-20 text-white">
+    <footer className="container mx-auto py-10 md:px-10 lg:px-20 text-white">
       <div className="mt-10 flex justify-around lg:justify-between">
         <ul className=" flex-col gap-5 lg:flex">
           <li className="mb-5 py-1 px-2 font-medium">
@@ -97,7 +97,7 @@ function Footer() {
       </div>
       <div className="mt-10 text-center">
         <p>
-          © AWS<span class="text-primary ">Community</span> / 2023, All Rights
+          © AWS<span className="text-primary ">Community</span> / 2023, All Rights
           Reserved
         </p>
         <ul className="flex gap-8"></ul>

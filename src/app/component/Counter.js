@@ -1,5 +1,6 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import UserContext from "../context/context";
 
 export default function Counter() {
   var countDownDate = new Date("June 30, 2023 23:00:59").getTime();
@@ -27,30 +28,77 @@ export default function Counter() {
       clearInterval(interval);
     };
   }, []);
+  const [nomenclature,setNomenclature]=useState({
+    DAYS:"DAYS",
+    HOURS:"HOURS",
+    MINUTES:"MINUTES",
+    SECONDS:"SECONDS",
+    EXPIRED:"EXPIRED"
+  })
+  //change language
+  const state = useContext(UserContext);
 
+  useEffect(() => {
+    if(state.ln=='MN'){
+      setNomenclature({
+        DAYS:"ӨДӨР",
+        HOURS:"ЦАГ",
+        MINUTES:"МИНУТ",
+        SECONDS:"СЕКУНД",
+        EXPIRED:"ДУУССАН"
+      })
+    }
+    else{
+      setNomenclature({
+        DAYS:"DAYS",
+        HOURS:"HOURS",
+        MINUTES:"MINUTES",
+        SECONDS:"SECONDS",
+        EXPIRED:"EXPIRED"
+      })
+    }
+  }, [state.ln]);
   return (
     <div className="relative">
       {days > 0 || hours > 0 || minutes > 0 || seconds > 0 ? (
         <div className=" flex flex-row justify-between w-full md:w-2/3 items-center font-medium">
-          <div className="flex flex-col items-center justify-center p-2 md:p-4" style={{color:'#00a3ee'}}>
+          <div
+            className="flex flex-col items-center justify-center p-2 md:p-4"
+            style={{ color: "#00a3ee" }}
+          >
             <div className="text-2xl lg:text-4xl">{days > 0 ? days : "00"}</div>
-            <div className="text-lg">DAYS</div>
+            <div className="text-lg">{nomenclature.DAYS}</div>
           </div>
-          <div className="flex flex-col items-center justify-center p-2 md:p-4" style={{color:'#ffcf4a'}}>
-            <div className="text-2xl lg:text-4xl  ">{hours > 0 ? hours : "00"}{" "}</div>
-            <div className="text-lg">HOURS</div>
+          <div
+            className="flex flex-col items-center justify-center p-2 md:p-4"
+            style={{ color: "#ffcf4a" }}
+          >
+            <div className="text-2xl lg:text-4xl  ">
+              {hours > 0 ? hours : "00"}{" "}
+            </div>
+            <div className="text-lg">{nomenclature.HOURS}</div>
           </div>
-          <div className="flex flex-col items-center justify-center p-2 md:p-4" style={{color:'#00c1c1'}}>
-            <div className="text-2xl lg:text-4xl  ">{minutes > 0 ? minutes : "00"}</div>
-            <div className="text-lg">MINUTED</div>
+          <div
+            className="flex flex-col items-center justify-center p-2 md:p-4"
+            style={{ color: "#00c1c1" }}
+          >
+            <div className="text-2xl lg:text-4xl  ">
+              {minutes > 0 ? minutes : "00"}
+            </div>
+            <div className="text-lg">{nomenclature.MINUTES}</div>
           </div>
-          <div className="flex flex-col items-center justify-center p-2 md:p-4" style={{color:'#ff6386'}}>
-            <div className="text-2xl lg:text-4xl  ">{seconds > 0 ? seconds : "00"}</div>
-            <div className="text-lg">SECONDS</div>
+          <div
+            className="flex flex-col items-center justify-center p-2 md:p-4"
+            style={{ color: "#ff6386" }}
+          >
+            <div className="text-2xl lg:text-4xl  ">
+              {seconds > 0 ? seconds : "00"}
+            </div>
+            <div className="text-lg">{nomenclature.SECONDS}</div>
           </div>
         </div>
       ) : (
-        <div style={{color:'#ff6386'}}>EXPIRED</div>
+        <div style={{ color: "#ff6386" }}>{nomenclature.EXPIRED}</div>
       )}
     </div>
   );
