@@ -5,6 +5,8 @@ import Dinner from "./screens/dinner";
 import Schedule from "./screens/schedule";
 import Speakers from "./screens/speakers";
 import Sponsors from "./screens/sponsors";
+import Location from "./screens/location";
+import Footer from "./screens/footer";
 export default function Page() {
   return (
     <div className="bg-black min-h-screen min-w-full">
@@ -27,6 +29,8 @@ export default function Page() {
       <Schedule/>
       <Speakers/>
       <Sponsors/>
+      <Location/>
+      <Footer/>
     </div>
   );
 }

@@ -13,7 +13,7 @@ function Sponsors() {
       }}>
       <h1 className='z-1 relative pt-60 text-center text-5xl font-bold uppercase xl:text-7xl text-white'>Sponsors</h1>
       <div>
-        
+        {/*  */}
       </div>
     </section>
   )
