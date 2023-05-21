@@ -4,6 +4,7 @@ import Counter from "../component/Counter";
 import Image from "next/image";
 import aws_ub from "../assets/img/all/community-aws.png";
 import UserContext from "../context/context";
+import { ticketURL } from "@/constants";
 function Home() {
   const [description,setDescription] = useState("Community-led conference for AWS users. Learn from hands-on practitioners like yourself.");
   const [dateTime,setDatetime] = useState("7 June 2023, 12:00, SHUTIS 8 library")
@@ -32,7 +33,7 @@ function Home() {
           {description}
         </div>
         <div className=" text-xl font-medium text-white italic mt-10 mb-5">{dateTime}</div>
-        <div className="inline font-semibold text-white px-6 py-2 bg-pink rounded-sm cursor-pointer">{TICKET}</div>
+        <a href={ticketURL} className="inline font-semibold text-white px-6 py-2 bg-pink rounded-sm cursor-pointer">{TICKET}</a>
       </div>
       <Image alt="aws-ub" className="z-10 lg hidden md:flex mx-auto" src={aws_ub} />
     </div>

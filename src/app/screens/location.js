@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+const map_embed_uri="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2673.642657898936!2d106.91580111200273!3d47.92395136588932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d96924267749e5d%3A0x846e6453de9db3b0!2sNUM%2C%20Building%203!5e0!3m2!1sen!2smn!4v1684661485693!5m2!1sen!2smn"
 export default function Location() {
   return (
     <section
@@ -32,7 +33,7 @@ export default function Location() {
         </div>
           <div className="relative h-[200px] xl:h-[400px] xl:flex-[3]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2673.642657898936!2d106.91580111200273!3d47.92395136588932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d96924267749e5d%3A0x846e6453de9db3b0!2sNUM%2C%20Building%203!5e0!3m2!1sen!2smn!4v1684661485693!5m2!1sen!2smn"
+              src={map_embed_uri}
               className=" border-0 w-full h-full"
               loading="lazy"
             ></iframe>

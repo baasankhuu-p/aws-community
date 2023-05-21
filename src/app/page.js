@@ -7,6 +7,7 @@ import Speakers from "./screens/speakers";
 import Sponsors from "./screens/sponsors";
 import Location from "./screens/location";
 import Footer from "./screens/footer";
+import Organize from "./screens/orgonizer";
 export default function Page() {
   return (
     <div className="bg-black min-h-screen min-w-full">
@@ -29,6 +30,7 @@ export default function Page() {
       <Schedule/>
       <Speakers/>
       <Sponsors/>
+      <Organize/>
       <Location/>
       <Footer/>
     </div>

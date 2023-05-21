@@ -1,7 +1,15 @@
 import React from "react";
 import { FaLinkedinIn, FaFacebookF, FaInstagram } from "react-icons/fa";
+const abouts = [
+  ["Nabout", "#"],
+  ["Nabout", "#"],
+  ["Nabout", "#"],
+  ["Nabout", "#"],
+];
+const mail = "mailto:hello@fibo.cloud";
+const map_uri="https://www.google.com/maps/place/Fibo+Education+Center,+4th+level,+Central+tower,+Sukhbaatar+square,+Khoroo+%238,+Ulaanbaatar+14200+Ulaanbaatar,+14200/@47.9180885,106.9203247,19z/data=!4m6!3m5!1s0x5d96939792aff15f:0x3997b715410fb4f6!8m2!3d47.9180885!4d106.9203247!16s%2Fg%2F11rc8c8w0w"
+const social_links = ["#linkedin", "#facebook", "#instagram"];
 function Footer() {
-  const abouts = [["Nabout","#"],["Nabout","#"],["Nabout","#"],["Nabout","#"]]
   return (
     <footer className="container mx-auto py-10 md:px-10 lg:px-20 text-white">
       <div className="mt-10 flex justify-around lg:justify-between">
@@ -9,17 +17,17 @@ function Footer() {
           <li className="mb-5 py-1 px-2 font-medium">
             <h5>About us</h5>
           </li>
-          {abouts.map(([title,url],index)=>
+          {abouts.map(([title, url], index) => (
             <li key={index}>
-            <a
-              target="_blank"
-              className="py-1 px-2 hover:text-primary hover:underline hover:underline-offset-4 focus:outline-0 focus:ring-2 focus:ring-primary"
-              href={url}
-            >
-              {title}
-            </a>
-          </li>
-          )}
+              <a
+                target="_blank"
+                className="py-1 px-2 hover:text-primary hover:underline hover:underline-offset-4 focus:outline-0 focus:ring-2 focus:ring-primary"
+                href={url}
+              >
+                {title}
+              </a>
+            </li>
+          ))}
         </ul>
         <ul className="flex flex-col gap-10 text-center xl:text-left">
           <li className="py-1 px-2 font-medium">
@@ -28,7 +36,7 @@ function Footer() {
           <li>
             <a
               className="py-1 px-2 hover:text-primary hover:underline hover:underline-offset-4 focus:outline-0 focus:ring-2 focus:ring-primary"
-              href="mailto:hello@fibo.cloud"
+              href={mail}
             >
               hello@fibo.cloud
             </a>
@@ -63,7 +71,7 @@ function Footer() {
               target="_blank"
               rel="noreferrer"
               className="rounded-full border-2 py-3 px-12 font-bold uppercase transition-all focus:outline-0 mt-8 block w-full text-center border-primary hover:bg-primary focus-visible:border-transparent focus-visible:ring-2 focus-visible:ring-white"
-              href="https://www.google.com/maps/place/Fibo+Education+Center,+4th+level,+Central+tower,+Sukhbaatar+square,+Khoroo+%238,+Ulaanbaatar+14200+Ulaanbaatar,+14200/@47.9180885,106.9203247,19z/data=!4m6!3m5!1s0x5d96939792aff15f:0x3997b715410fb4f6!8m2!3d47.9180885!4d106.9203247!16s%2Fg%2F11rc8c8w0w"
+              href={map_uri}
             >
               On Map
             </a>
@@ -73,21 +81,21 @@ function Footer() {
       <div className="flex justify-center">
         <div className=" w-1/2 flex flex-row justify-around md:w-1/5">
           <a
-            href="#"
+            href={social_links[0]}
             className="hover:bg-primary w-25 h-25 items-center p-2 rounded-full hover:border-primary cursor-pointer"
             style={{ borderWidth: 1 }}
           >
             <FaLinkedinIn />
           </a>
           <a
-            href="#"
+            href={social_links[1]}
             className="hover:bg-primary w-25 h-25 items-center p-2 rounded-full hover:border-primary cursor-pointer"
             style={{ borderWidth: 1 }}
           >
             <FaFacebookF />
           </a>
           <a
-            href="#"
+            href={social_links[2]}
             className="hover:bg-primary w-25 h-25 items-center p-2 rounded-full hover:border-primary cursor-pointer"
             style={{ borderWidth: 1 }}
           >
@@ -97,8 +105,8 @@ function Footer() {
       </div>
       <div className="mt-10 text-center">
         <p>
-          © AWS<span className="text-primary ">Community</span> / 2023, All Rights
-          Reserved
+          © AWS<span className="text-primary ">Community</span> / 2023, All
+          Rights Reserved
         </p>
         <ul className="flex gap-8"></ul>
       </div>
