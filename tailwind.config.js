@@ -29,8 +29,10 @@ module.exports = {
         // => @media (min-width: 1536px) { ... }
       },
       colors:{
-        'primary':'rgb(233,73,61)',
-        'primarydark':'rgb(239 0 0)',
+        // 'primary':'rgb(233,73,61)',
+        'primary':'#FF9900',
+        // 'primarydark':'rgb(239 0 0)',
+        'primarydark':'#ff8000',
         'pink':'#ff007a',
         'orange':'rgb(255, 153, 0)',
         'defbggray':'#232F3E'

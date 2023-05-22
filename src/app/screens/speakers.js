@@ -5,27 +5,27 @@ function Speakers() {
     [
       "Jayson E. Street",
       "CyberSecurity Expert",
-      "	https://kazhackstan.kz/_next/image?url=%2FSpeaker-01.webp&w=2048&q=100",
+      "",
     ],
     [
       "Jayson E. Street",
       "CyberSecurity Expert",
-      "	https://kazhackstan.kz/_next/image?url=%2FSpeaker-01.webp&w=2048&q=100",
+      "",
     ],
     [
       "Jayson E. Street",
       "CyberSecurity Expert",
-      "	https://kazhackstan.kz/_next/image?url=%2FSpeaker-01.webp&w=2048&q=100",
+      "",
     ],
     [
       "Jayson E. Street",
       "CyberSecurity Expert",
-      "	https://kazhackstan.kz/_next/image?url=%2FSpeaker-01.webp&w=2048&q=100",
+      "",
     ],
     [
       "Jayson E. Street",
       "CyberSecurity Expert",
-      "	https://kazhackstan.kz/_next/image?url=%2FSpeaker-01.webp&w=2048&q=100",
+      "",
     ]
   ];
   return (
@@ -40,7 +40,7 @@ function Speakers() {
       </div>
       <div className="mt-20 grid gap-[2px] md:grid-cols-2 xl:grid-cols-3">
         {speacker_info.map(([name,rank,pro_url],index)=>
-        <div key={index} className=" relative flex aspect-square flex-col items-start justify-between p-6 shadow-speaker" style={{backgroundImage:'url("https://kazhackstan.kz/abstract.svg")',backgroundSize:'auto 150%'}}>
+        <div key={index} className=" relative flex aspect-square flex-col items-start justify-between p-6 shadow-speaker" style={{backgroundImage:'url(/bg1.svg)',backgroundSize:'auto 150%'}}>
         <span
           style={{
             boxSizing: "border-box",

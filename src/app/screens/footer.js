@@ -7,6 +7,7 @@ const abouts = [
   ["Nabout", "#"],
 ];
 const mail = "mailto:hello@fibo.cloud";
+const phone = '75105585'
 const map_uri="https://www.google.com/maps/place/Fibo+Education+Center,+4th+level,+Central+tower,+Sukhbaatar+square,+Khoroo+%238,+Ulaanbaatar+14200+Ulaanbaatar,+14200/@47.9180885,106.9203247,19z/data=!4m6!3m5!1s0x5d96939792aff15f:0x3997b715410fb4f6!8m2!3d47.9180885!4d106.9203247!16s%2Fg%2F11rc8c8w0w"
 const social_links = ["#linkedin", "#facebook", "#instagram"];
 function Footer() {
@@ -39,6 +40,14 @@ function Footer() {
               href={mail}
             >
               hello@fibo.cloud
+            </a>
+          </li>
+          <li>
+            <a
+              className="py-1 px-2 hover:text-primary hover:underline hover:underline-offset-4 focus:outline-0 focus:ring-2 focus:ring-primary"
+              href={`tel:${phone}`}
+            >
+              +976 {phone}
             </a>
           </li>
         </ul>

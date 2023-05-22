@@ -31,11 +31,11 @@ export default function About() {
       id="about"
       className="relative min-h-screen lg:mx-auto min-w-full flex flex-col justify-center items-center mt-10 md:mt-0"
       style={{
-        backgroundImage: "url(https://kazhackstan.kz/polygon.webp)",
+        // backgroundImage: "url(/bg2.jpg)",
         zIndex: 0,
         overflow: "hidden",
         backgroundSize: "100% auto",
-        backgroundPosition: "center -200px",
+        backgroundPosition: "center center",
         backgroundRepeat: "no-repeat",
       }}
     >

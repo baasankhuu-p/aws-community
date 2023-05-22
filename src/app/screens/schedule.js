@@ -73,7 +73,7 @@ function Schedule() {
         </div>
         <div className="p-4">
           {(visibleCon?visibleCon:visibleDin).map(([date, measures], index) => (
-            <div key={index} className={`my-2 flex flex-col gap-4 border-2 border-primary py-3 px-6 text-sm sm:flex-row sm:items-center xl:gap-44 xl:py-6 xl:px-11 bg-gradient-to-r hover:from-black hover:to-[#EF0000] ${index==0 && ' from-black to-[#EF0000]'} cursor-pointer`} style={{borderWidth:1}}>
+            <div key={index} className={`my-2 flex flex-col gap-4 border-2 border-primary py-3 px-6 text-sm sm:flex-row sm:items-center xl:gap-44 xl:py-6 xl:px-11 bg-gradient-to-r hover:from-black hover:to-primarydark ${index==0 && ' from-black to-primarydark'} cursor-pointer`} style={{borderWidth:1}}>
               <div className=" text-primary font-bold">{date}</div>
               <div className=" font-medium capitalize">{measures}</div>
             </div>

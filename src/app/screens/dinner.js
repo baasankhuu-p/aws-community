@@ -27,7 +27,7 @@ function Dinner() {
   return (
     <div
       id="dinner"
-      className="relative h-full flex flex-col justify-between items-center  md:flex-row  z-0 lg:px-20 my-20"
+      className="relative h-full flex flex-col justify-between items-center  md:flex-row  z-10 lg:px-20 my-20"
     >
       {/* bg-defbggray */}
       <div className="text-center w-4/5 lg:w-1/2 md:w-3/5 md:mx-20 z-20 text-white font-medium text-sm lg:text-4xl font-Fugaz italic">
@@ -45,7 +45,7 @@ function Dinner() {
           </div>
           <Image src={drinks} alt="drinks" className="w-full" />
           <Link href={dinnerRegister}>
-            <div className="bg-orange text-gray-100 font-bold text-center rounded cursor-pointer py-1">
+            <div className="bg-primary hover:bg-primarydark text-gray-100 font-bold text-center rounded cursor-pointer py-1">
               {register}
             </div>
           </Link>

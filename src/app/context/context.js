@@ -15,7 +15,7 @@ export const UserStore = (props) => {
     ["Schedules", scl],
     ["Sponsors", pns],
   ]);
-  const [watch, setWatch] = useState(["#", "WATCH"]);
+  const [watch, setWatch] = useState(["https://www.youtube.com/@cloud.community", "WATCH"]);
   const ChangeLn = () => {
     if (ln == "EN") {
       setLN("MN");
