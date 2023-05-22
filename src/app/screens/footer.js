@@ -12,7 +12,7 @@ const map_uri="https://www.google.com/maps/place/Fibo+Education+Center,+4th+leve
 const social_links = ["#linkedin", "#facebook", "#instagram"];
 function Footer() {
   return (
-    <footer className="border-primarydark container mx-auto py-10 md:px-10 lg:px-20 text-white " 
+    <footer className="border-primary container mx-auto py-10 md:px-10 lg:px-20 text-white " 
     style={{
       position: "relative",
       zIndex: 0,
