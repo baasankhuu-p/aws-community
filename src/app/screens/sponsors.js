@@ -16,7 +16,7 @@ function Sponsors() {
         position: "relative",
         zIndex: 0,
         overflow: "hidden",
-        backgroundImage: 'url("https://kazhackstan.kz/partners.svg")',
+        // backgroundImage: 'url("https://kazhackstan.kz/partners.svg")',
         backgroundSize: "auto 100%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
