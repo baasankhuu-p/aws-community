@@ -44,11 +44,11 @@ function Dinner() {
             7 June 2023, Elixer
           </div>
           <Image src={drinks} alt="drinks" className="w-full" />
-          <Link href={dinnerRegister}>
+          <a  target="_blank" href={dinnerRegister}>
             <div className="bg-primary hover:bg-primarydark text-gray-100 font-bold text-center rounded cursor-pointer py-1">
               {register}
             </div>
-          </Link>
+          </a>
         </div>
       </div>
     </div>

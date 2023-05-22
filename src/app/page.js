@@ -29,8 +29,21 @@ export default function Page() {
       <About />
       <Schedule />
       <Speakers />
-      <Sponsors />
-      <Organize />
+
+      <section
+        style={{
+          position: "relative",
+          zIndex: 0,
+          overflow: "hidden",
+          backgroundImage: 'url("bg2.svg")',
+          backgroundSize: "cover",
+          backgroundPosition:'center center',
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <Sponsors />
+        <Organize />
+      </section>
       <Location />
       <Footer />
     </div>

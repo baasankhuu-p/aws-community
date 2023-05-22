@@ -33,7 +33,7 @@ function Home() {
           {description}
         </div>
         <div className=" text-xl font-medium text-white italic mt-10 mb-5">{dateTime}</div>
-        <a href={ticketURL} className="inline font-semibold text-white px-6 py-2 bg-pink rounded-sm cursor-pointer">{TICKET}</a>
+        <a target="_blank" href={ticketURL} className="inline font-semibold text-white px-6 py-2 bg-pink rounded-sm cursor-pointer">{TICKET}</a>
       </div>
       <Image alt="aws-ub" className="z-10 lg hidden md:flex mx-auto" src={aws_ub} />
     </div>
