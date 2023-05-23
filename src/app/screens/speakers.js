@@ -52,13 +52,13 @@ function Speakers() {
     >
       <div className="flex flex-col justify-between">
         <h4 className="block font-futura font-bold uppercase -tracking-wider xl:text-7xl xl:tracking-normal text-3xl text-white">
-          <span className="relative top-5 block text-xl text-primary xl:text-3xl my-4">
+          <span className="relative top-5 block text-xl text-primary xl:text-3xl my-2">
             line up
           </span>
           <div>Speakers</div>
         </h4>
       </div>
-      <div className="mt-20 grid gap-[2px] md:grid-cols-2 xl:grid-cols-3">
+      <div className="mt-5 grid gap-[2px] md:grid-cols-2 xl:grid-cols-3">
         {speacker_info.map((el, index) => (
           <div
             key={index}

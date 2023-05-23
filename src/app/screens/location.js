@@ -9,7 +9,7 @@ export default function Location() {
     >
       <div className="h-2/5 mt-4 flex flex-col xl:mt-7 xl:flex-row md:w-3/4">
         <div className="flex flex-col items-center justify-center bg-[#1C1C1C] lg:px-10">
-          <div className="p-4 text-center text-2xl text-primary xl:p-0">
+          <div className="p-4 text-center text-primary xl:p-0" style={{fontSize:'12px'}}> 
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="48px"
