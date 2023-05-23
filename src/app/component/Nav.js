@@ -17,7 +17,7 @@ export default function Nav() {
   return (
     <>
       <div className="lg:w-5/6 text-white flex flex-row justify-between lg:justify-center">
-        <div onClick={state.ChangeLn} className="flex items-center my-auto py-1 px-4 mx-4 text-center rounded-full hover:bg-primary border-primary text-white bg-black font-medium text-sm md:text-lm cursor-pointer" style={{borderWidth:1}}>
+        <div onClick={state.ChangeLn} className="flex items-center my-auto py-1 px-4 mx-4 text-center rounded-full hover:bg-primary border-primary text-white bg-black font-medium text-sm md:text-lm cursor-pointer headernav" style={{borderWidth:1}}>
           {state.ln}
         </div>
         <nav className="w-5/6 hidden md:flex flex-row bg-black justify-between rounded-full border-primary items-center " style={{borderWidth:1}}>
@@ -25,7 +25,7 @@ export default function Nav() {
             <a
               key={index}
               href={url}
-              className=" text-center w-full hover:text-primary font-bold uppercase mx-1 px-4 text-lm"
+              className=" text-center w-full hover:text-primary font-bold uppercase mx-1 px-4 headernav"
             >
               {nav}
             </a>

@@ -29,19 +29,31 @@
       background-color: rgba(0, 0, 0, 0.4);
   }
 }
+.headernav{
+  font-size: 8px;
+}
 @media (min-width: 760px) {
+  .headernav{
+    font-size: 10px;
+  }
   .din_eve{
     width: 250px;
     height: auto;
   }
 }
 @media (min-width: 1024px) {
+  .headernav{
+    font-size: 12;
+  }
   .din_eve{
     width: 250px;
     height: auto;
   }
 }
 @media (min-width: 1240px) {
+  .headernav{
+    font-size: 14px;
+  }
   .din_eve{
     width: 350px;
     height: auto;
