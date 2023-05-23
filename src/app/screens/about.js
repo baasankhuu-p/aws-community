@@ -25,10 +25,10 @@ export default function About() {
     >
         <div className="flex flex-col md:flex-row justify-between lg:justify-center items-center my-5 lg:mx-52  lg:w-5/6">
           <div className="flex flex-col border-2 mr-2 lg:w-1/3 mx-2">
-            <div className=" text-white border-b-2 text-center p-1 text-xs lg:text-xl font-bold">
+            <div className=" text-white border-b-2 text-center p-1 text-3xl md:4xl font-medium flex flex-col gap-4 border-2 py-3 px-6 ">
             About us
             </div>
-            <div className=" text-white text-center p-1 text-xl font-medium my-auto py-10">
+            <div className=" text-white text-center p-1 font-medium flex flex-col gap-4 border-2 py-3 px-6 text-sm sm:flex-row sm:items-center xl:gap-44 xl:py-6 xl:px-11 bg-gradient-to-r">
               {shortIntro}
             </div>
           </div>

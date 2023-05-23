@@ -71,7 +71,7 @@ export default function Nav() {
       <a
         href={WATCH[0]}
         target="_blank"
-        className="hidden px-2 py-1 md:block lg:px-8  bg-primary hover:bg-primarydark rounded text-white font-bold lg:text-lg"
+        className="hidden px-2 py-1 md:block lg:px-8  bg-primary hover:bg-primarydark rounded text-white headernav"
       >
         {WATCH[1]}
       </a>

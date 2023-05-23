@@ -29,16 +29,16 @@ function Footer() {
         borderTopWidth: 0.01,
       }}
     >
-      <div className="mt-10 flex justify-around">
-        <ul className=" flex-col gap-3 lg:flex">
-          <li className="mb-5 py-1 font-bold text-lg">
+      <div className="mt-10 px-2 px:0 flex justify-between md:justify-around relative">
+        <ul className=" flex-col lg:flex">
+          <li className="mb-4 py-1 font-bold text-sm md:text-lg lg:text-2xl text-primary underline underline-offset-4 focus:outline-0">
             <h5>Social links</h5>
           </li>
           {social_links.map(([title, url], index) => (
             <li key={index}>
               <a
                 target="_blank"
-                className="py-1 px-2 hover:text-primary hover:underline hover:underline-offset-4 focus:outline-0 focus:ring-2 focus:ring-primary"
+                className="py-1 hover:text-primary hover:underline hover:underline-offset-4 focus:outline-0 focus:ring-2 focus:ring-primary text-xs md:text-sm lg:text-xl"
                 href={url}
               >
                 {title}
@@ -47,14 +47,14 @@ function Footer() {
           ))}
         </ul>
         <ul className="flex flex-col gap-2 xl:text-left">
-          <li className="mb-5 py-1 font-bold text-lg">
+          <li className="mb-5 py-1 font-bold text-sm md:text-lg lg:text-2xl  text-primary underline underline-offset-4 focus:outline-0">
             <h5>Contacts</h5>
           </li>
           {mail.map(([mailname], index) => (
             <li>
               <a
                 key={index}
-                className="px-2 hover:text-primary hover:underline hover:underline-offset-4 focus:outline-0 focus:ring-2 focus:ring-primary"
+                className="px-2 hover:text-primary hover:underline hover:underline-offset-4 focus:outline-0 focus:ring-2 focus:ring-primary text-xs md:text-sm lg:text-xl"
                 href={`mailto:${mailname}`}
               >
                 {mailname}
@@ -66,7 +66,7 @@ function Footer() {
               <>
                 <a
                   key={index}
-                  className="px-2 hover:text-primary hover:underline hover:underline-offset-4 focus:outline-0 focus:ring-2 focus:ring-primary"
+                  className="px-2 hover:text-primary hover:underline hover:underline-offset-4 focus:outline-0 focus:ring-2 focus:ring-primary text-xs md:text-sm lg:text-xl"
                   href={`tel:${phone}`}
                 >
                   +976-{phone}
@@ -75,18 +75,14 @@ function Footer() {
             </li>
           ))}
         </ul>
-        <ul className="flex flex-col gap-2 xl:text-left">
-        <div className="flex flex-row justify-end"><div><Link href="/contruct" className=" hover:underline">Code of conducts</Link> 2023</div></div>
-        </ul>
       </div>
-      <div className="my-10 text-center">
-      {/* <div className="flex flex-row justify-end"><div><a href="/code-of-conduct" className=" hover:underline">Code of conducts</a> 2023</div></div> */}
+      <div className="my-5 text-center">
         <p>
           © AWS<span className="text-primary "> User Group of Mongolia</span> / 2023 / All
           Rights Reserved
         </p> 
-        <ul className="flex gap-8"></ul>
       </div>
+        <div className="absolute bottom-16 right-0 "><div><Link href="/contruct" className=" hover:underline">Code of conducts</Link> 2023</div></div>
     </footer>
   );
 }

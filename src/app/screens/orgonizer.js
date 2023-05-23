@@ -12,8 +12,8 @@ function Organize() {
   ];
 
   return (
-    <div className="mt-10 md:mt-20 mx-2 lg:mx-48">
-      <div className=" text-white text-center text-5xl xl:text-7xl font-bold">
+    <div className="mt-10 md:mt-20 mx-2 lg:mx-30">
+      <div className=" text-white text-center text-4xl xl:text-5xl font-bold">
         Organizer
       </div>
       <div className="flex md:flex-row flex-wrap items-center justify-center my-10 ">
@@ -22,7 +22,7 @@ function Organize() {
             src={url}
             alt={title}
             className="my-2 rounded-sm mx-2"
-            style={{width:'286px' ,height:'auto'}}
+            style={{width:'320px' ,height:'auto'}}
             key={index}
           />
         ))}

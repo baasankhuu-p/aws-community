@@ -43,7 +43,7 @@
       background-size:cover;
       background-position: center center;
       background-repeat:no-repeat;
-      position: 0.05;
+
   }
   .sponsor-bg{
     position: relative;
@@ -53,7 +53,6 @@
     background-size:cover;
     background-position: center center;
     background-repeat:no-repeat; 
-    position: 0.05;
   }
   .footer-bg{
     position: relative;
