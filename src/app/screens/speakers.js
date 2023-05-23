@@ -77,16 +77,16 @@ function Speakers() {
                 padding: "0px",
                 border: "none",
                 display: "block",
-                minWidth: "80%",
+                minWidth: "100%",
                 maxWidth: "100%",
-                minHeight: "80%",
+                minHeight: "100%",
                 maxHeight: "100%",
                 objectFit: "cover",
                 bottom: 0,
                 right: 0,
               }}
             />
-            <div className="text-white relative z-[1] flex h-full flex-col items-start justify-end lg:justify-between">
+            <div className="text-white relative z-[1] flex h-full flex-col items-start justify-end ">
               <div>
                 <h5 className=" text-sm font-bold lg:text-xl">{el[0]}</h5>
                 <p className="mt-1 text-xs lg:text-sm capitalize">{el[1]}</p>
