@@ -21,15 +21,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative flex flex-col justify-center items-center mt-10"
-      style={{
-        backgroundImage: "url(/bg2.svg)",
-        zIndex: 0,
-        overflow: "hidden",
-        backgroundSize: "cover",
-        backgroundPosition: "center center",
-        backgroundRepeat: "no-repeat",
-      }}
+      className="relative flex flex-col justify-center items-center mt-10 about-bg"
     >
         <div className="flex flex-col md:flex-row justify-between lg:justify-center items-center my-5 lg:mx-52  lg:w-5/6">
           <div className="flex flex-col border-2 mr-2 lg:w-1/3 mx-2">

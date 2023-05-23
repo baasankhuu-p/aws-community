@@ -5,9 +5,9 @@ export default function Location() {
   return (
     <section
       id="location"
-      className="px-2 py-10 items-center"
+      className="px-2 py-10 flex flex-row justify-center items-center"
     >
-      <div className="h-2/5 mt-4 flex flex-col xl:mt-7 xl:flex-row lg:mx-52">
+      <div className="h-2/5 mt-4 flex flex-col xl:mt-7 xl:flex-row md:w-3/4">
         <div className="flex flex-col items-center justify-center bg-[#1C1C1C] lg:px-10">
           <div className="p-4 text-center text-2xl text-primary xl:p-0">
             <svg

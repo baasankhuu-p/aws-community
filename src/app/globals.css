@@ -15,26 +15,64 @@
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-@media (min-width: 760px) {
+@media (min-width: 768px) {
   .shadow-home {
-    box-shadow: rgb(223, 151, 44) 0px 9px 38px,
-      rgba(223, 151, 44, 0.4) 20px 15px 12px;
+    box-shadow: rgb(223, 151, 44) 0px 9px 20px,
+      rgba(223, 151, 44, 0.4) 10px 10px 10px;
       border-radius: 5px;
       background-color: rgba(0, 0, 0, 0.4);
   }
   .shadow-dinner {
     box-shadow: 
-      rgba(223, 151, 44, 0.4) 20px 15px 12px,rgb(223, 151, 44) 0px 9px 38px;
+      rgba(223, 151, 44, 0.4) 10px 10px 10px, rgb(223, 151, 44) 0px 9px 20px;
       border-radius: 5px;
       background-color: rgba(0, 0, 0, 0.4);
   }
+  .home-bg{
+      z-index: 0;
+      overflow:hidden;
+      background-image: url(/bg1.svg);
+      background-size:cover;
+      background-position: center -200px;
+      background-repeat:no-repeat;
+  }
+  .about-bg{
+      z-index: 0;
+      overflow:hidden;
+      background-image: url(/bg2.svg);
+      background-size:cover;
+      background-position: center center;
+      background-repeat:no-repeat;
+      position: 0.05;
+  }
+  .sponsor-bg{
+    position: relative;
+    z-index: 0;
+    overflow:hidden;
+    background-image: url(/bg2.svg);
+    background-size:cover;
+    background-position: center center;
+    background-repeat:no-repeat; 
+    position: 0.05;
+  }
+  .footer-bg{
+    position: relative;
+    z-index: 0;
+    overflow:hidden;
+    background-image: url(/bg3.svg);
+    background-size:cover;
+    background-position: center center;
+    background-repeat:no-repeat; 
+    position: 0.01;
+  }
 }
 .headernav{
-  font-size: 8px;
+  font-size: 15px;
+  font-weight: 700;
 }
 @media (min-width: 760px) {
   .headernav{
-    font-size: 10px;
+    font-size: 16px;
   }
   .din_eve{
     width: 250px;
@@ -43,7 +81,7 @@
 }
 @media (min-width: 1024px) {
   .headernav{
-    font-size: 12;
+    font-size: 20px;
   }
   .din_eve{
     width: 250px;
@@ -52,7 +90,7 @@
 }
 @media (min-width: 1240px) {
   .headernav{
-    font-size: 14px;
+    font-size: 24px;
   }
   .din_eve{
     width: 350px;

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from "react";
 const mail = [
   ["info@fibo.edu.mn"],
@@ -5,8 +6,6 @@ const mail = [
   ["ganjiguur@fibo.cloud"],
 ];
 const phones = [["86689886"], ["89550221"], ["99266664"]];
-const map_uri =
-  "https://www.google.com/maps/place/Fibo+Education+Center,+4th+level,+Central+tower,+Sukhbaatar+square,+Khoroo+%238,+Ulaanbaatar+14200+Ulaanbaatar,+14200/@47.9180885,106.9203247,19z/data=!4m6!3m5!1s0x5d96939792aff15f:0x3997b715410fb4f6!8m2!3d47.9180885!4d106.9203247!16s%2Fg%2F11rc8c8w0w";
 const social_links = [
   ["AWS Community", "https://awsmongolia.com/"],
   ["Linkedin", "https://www.linkedin.com/company/awsmongolia"],
@@ -77,7 +76,7 @@ function Footer() {
           ))}
         </ul>
         <ul className="flex flex-col gap-2 xl:text-left">
-        <div className="flex flex-row justify-end"><div><a href="/code-of-conduct" className=" hover:underline">Code of conducts</a> 2023</div></div>
+        <div className="flex flex-row justify-end"><div><Link href="/contruct" className=" hover:underline">Code of conducts</Link> 2023</div></div>
         </ul>
       </div>
       <div className="my-10 text-center">

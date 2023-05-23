@@ -62,7 +62,7 @@ function Speakers() {
         {speacker_info.map((el, index) => (
           <div
             key={index}
-            className=" relative flex aspect-square flex-col items-start justify-between p-6 shadow-speaker"
+            className=" relative flex aspect-square flex-col items-start justify-between p-2 shadow-speaker"
             style={{
               backgroundImage: "url(/bg1.svg)",
               backgroundSize: "auto 150%",
@@ -77,9 +77,9 @@ function Speakers() {
                 padding: "0px",
                 border: "none",
                 display: "block",
-                minWidth: "100%",
+                minWidth: "80%",
                 maxWidth: "100%",
-                minHeight: "100%",
+                minHeight: "80%",
                 maxHeight: "100%",
                 objectFit: "cover",
                 bottom: 0,
@@ -88,8 +88,8 @@ function Speakers() {
             />
             <div className="text-white relative z-[1] flex h-full flex-col items-start justify-end lg:justify-between">
               <div>
-                <h5 className="text-xl font-bold lg:text-2xl">{el[0]}</h5>
-                <p className="mt-1 text-sm md:text-xl capitalize">{el[1]}</p>
+                <h5 className=" text-sm font-bold lg:text-xl">{el[0]}</h5>
+                <p className="mt-1 text-xs lg:text-sm capitalize">{el[1]}</p>
               </div>
               {el[3] && (
                 <button

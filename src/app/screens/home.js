@@ -10,8 +10,8 @@ const dateEn_mn = [
   "2023 оны 6 сарын 7 12:00 - Өргөө 3 IMAX Шангри-Ла",
 ];
 const desEn_mn = [
-  "Community-led conference for AWS users. Learn from hands-on practitioners like yourself.",
-  "AWS хэрэглэгчдэд зориулсан олон нийтээр удирдуулсан бага хурал",
+  " Be part of the first-ever AWS Community Day in Ulaanbaatar! Listen to local and international cloud experts share their knowledge in easy-to-understand talks. Join us to learn more about advanced cloud topics and connect with like-minded individuals. Don't miss this special event to improve your cloud skills and network with others in the community!",
+  "..",
 ];
 const tcketEn_mn = [
   ["Buy Ticket", "Only 200 seats"],
@@ -37,23 +37,23 @@ function Home() {
   return (
     <div
       id="home"
-      className="flex flex-col md:flex-row py-20 relative mx-2 lg:mx-24 items-center lg:justify-center"
+      className="flex flex-col md:flex-row py-20 relative mx-2 items-center lg:justify-center"
     >
-      <div className="flex flex-col md:flex-row justify-between items-center z-0 md:py-10 lg:py-32 lg:px-24 shadow-home lg:w-5/6  lg:justify-center">
+      <div className="flex flex-col md:flex-row justify-between items-center z-0 md:py-10 lg:py-16 lg:px-24 shadow-home lg:w-5/6 lg:justify-center">
         <div className="w-full md:w-3/4 z-30 ">
           <Counter />
-          <div className="text-2xl md:text-5xl font-bold text-white my-10 w-full">
+          <div className=" font-bold text-white my-4 w-full" style={{fontSize:'30px'}}>
             <div>
-              AWS Community Day &nbsp;
+              AWS Community Day&nbsp;
               <span className="font-black" style={{ color: "#00b4fc" }}>
                 Ulaanbaatar
               </span>
             </div>
           </div>
-          <div className="text-xl md:text-3xl font-medium text-white my-3 italic md:pr-40">
+          <div className="font-medium text-white my-1 italic md:pr-40" style={{fontSize:'16px'}}>
             {description}
           </div>
-          <div className="md:sm md:text-xl font-medium text-white italic mt-10 mb-5">
+          <div className="md:sm md:text-xl font-medium text-white italic mt-5 mb-5" style={{fontSize:'12px'}}>
             {dateTime}
           </div>
           <span className='text-white font-medium md:text-xl'>

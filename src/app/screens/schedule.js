@@ -52,16 +52,16 @@ function Schedule() {
   return (
     <section
       id="schedules"
-      className="relative m-h-screen  text-white flex flex-col justify-center items-center mx-2 lg:mx-52"
+      className="relative m-h-screen text-white flex flex-col justify-center items-center mx-2"
     >
-      <div className="mb-10 p-10 shadow-2xl shadow-primary w-full rounded-xl md:mx-48">
+      <div className="mb-10 p-10 shadow-2xl shadow-primary w-full rounded-xl md:mx-48 lg:w-5/6">
         <h4 className="block font-futura font-bold uppercase -tracking-wider xl:text-7xl xl:tracking-normal text-left text-3xl">
           <span className="relative block font-fugaz-one text-xl text-primary xl:text-3xl ">
             event
           </span>
           Schedule
         </h4>
-        <div className="mt-2 flex flex-row justify-end font-Fugaz uppercase focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-primary lg:text-3xl font-bold italic cursor-pointer">
+        <div className="mt-2 flex flex-row justify-end font-Fugaz uppercase focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-primary lg:text-2xl font-bold italic cursor-pointer">
           <div
             className={visibleVal == "CONFERENCE" && "text-primary underline"}
             onClick={() => {

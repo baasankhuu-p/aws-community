@@ -9,23 +9,14 @@ import Sponsors from "./screens/sponsors";
 import Location from "./screens/location";
 import Footer from "./screens/footer";
 import Organize from "./screens/orgonizer";
-export default function Page() {
-  return (
+export default function Page() {return (
+  <div>
     <div className="bg-black min-h-screen min-w-full">
-      
-
       {/*  bg-defbggray */}
       <Header />
       <>
         <section
-          style={{
-            zIndex: 0,
-            overflow: "hidden",
-            backgroundImage: `url(/bg1.svg)`,
-            backgroundSize: "cover",
-            backgroundPosition: "center -200px",
-            backgroundRepeat: "no-repeat",
-          }}
+          className='home-bg'
         >
           <Home />
           <Dinner />
@@ -35,22 +26,15 @@ export default function Page() {
         <Speakers />
 
         <section
-          style={{
-            position: "relative",
-            zIndex: 0,
-            overflow: "hidden",
-            backgroundImage: 'url("bg2.svg")',
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
-            backgroundRepeat: "no-repeat",
-          }}
+        className='sponsor-bg'
         >
           <Sponsors />
           <Organize />
         </section>
         <Location />
       </>
-        <Footer />
+      <Footer />
     </div>
+  </div>
   );
 }

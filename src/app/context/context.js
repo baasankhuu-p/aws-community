@@ -1,11 +1,11 @@
 "use client";
 import { createContext, useState } from "react";
 import { yt } from "@/constants";
-const hm='#home'
-const ab='#about'
-const sps='#speakers'
-const scl='#schedules'
-const pns='#sponsors'
+const hm='/'
+const ab='/#about'
+const sps='/#speakers'
+const scl='/#schedules'
+const pns='/#sponsors'
 export const UserStore = (props) => {
   const [ln, setLN] = useState("EN");
   const [nav, setNav] = useState([
