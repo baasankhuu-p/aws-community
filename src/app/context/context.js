@@ -24,7 +24,7 @@ export const UserStore = (props) => {
         ["Тухай", ab],
         ["Илтгэгчид", sps],
         ["Хуваарь", scl],
-        ["СПОНСОРУУД", pns],
+        ["СПОНСОР", pns],
       ]);
       setWatch([yt, "ҮЗЭХ"]);
     } else {
