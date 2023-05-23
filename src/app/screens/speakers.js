@@ -18,8 +18,8 @@ function Speakers() {
       "Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem",
     ],
     [
-      "Victor Vedmich",
-      "Senior Developer Advocate at AWS",
+      "Egor Miasnikov",
+      "Solutions Architect at AWS | 5x AWS Certified | ex-EPAM | ex-Google",
       "./speakers/3.png",
       "Learn more",
       "Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem",
