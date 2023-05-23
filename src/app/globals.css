@@ -2,13 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (min-width:1280px) {
-    section {
-        padding-left: 5rem;
-        padding-right: 5rem;
-    }
-}.shadow-speaker {
-    --tw-shadow: 0 0 0 2px #df972c;
-    --tw-shadow-colored: 0 0 0 2px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+@media (min-width: 1280px) {
+  section {
+    /* padding-left: 5rem;
+        padding-right: 5rem; */
+  }
+}
+.shadow-speaker {
+  --tw-shadow: 0 0 0 2px rgb(223, 151, 44);
+  --tw-shadow-colored: 0 0 0 2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 760px) {
+  .shadow-home {
+    box-shadow: rgb(223, 151, 44) 0px 9px 38px,
+      rgba(223, 151, 44, 0.4) 20px 15px 12px;
+      border-radius: 5px;
+      background-color: rgba(0, 0, 0, 0.4);
+  }
+  .shadow-dinner {
+    box-shadow: 
+      rgba(223, 151, 44, 0.4) 20px 15px 12px,rgb(223, 151, 44) 0px 9px 38px;
+      border-radius: 5px;
+      background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+@media (min-width: 760px) {
+  .din_eve{
+    width: 250px;
+    height: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .din_eve{
+    width: 250px;
+    height: auto;
+  }
+}
+@media (min-width: 1240px) {
+  .din_eve{
+    width: 350px;
+    height: auto;
+  }
+}
+.custom-shadow{
+  box-shadow: 
+    rgba(223, 151, 44, 0.4) 20px 15px 12px,rgb(223, 151, 44) 0px 9px 38px;
 }

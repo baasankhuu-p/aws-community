@@ -2,28 +2,72 @@
 import React from "react";
 import { ScrollingCarousel } from "@trendyol-js/react-carousel";
 import Deeditem from "./deeditem";
-import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 export default function Deed() {
   const item = [
     [
-      "2017",
-      "Ulaanbaatar",
-      "https://kazhackstan.kz/_next/image?url=%2F2017.webp&w=1920&q=75",
+      "",
+      "",
+      '/events/1.png',
     ],
     [
-      "2018",
-      "Ulaanbaatar",
-      "https://kazhackstan.kz/_next/image?url=%2F2018.webp&w=1920&q=75",
+      "",
+      "",
+      '/events/2.png',
     ],
     [
-      "2019",
-      "Ulaanbaatar",
-      "https://kazhackstan.kz/_next/image?url=%2F2019.webp&w=1920&q=75",
+      "",
+      "",
+      '/events/3.png',
     ],
     [
-      "2020",
-      "Ulaanbaatar",
-      "https://kazhackstan.kz/_next/image?url=%2F2017.webp&w=1920&q=75",
+      "",
+      "",
+      '/events/4.png',
+    ],
+    [
+      "",
+      "",
+      '/events/5.png',
+    ],
+    [
+      "",
+      "",
+      '/events/6.png',
+    ],
+    [
+      "",
+      "",
+      '/events/7.png',
+    ],
+    [
+      "",
+      "",
+      '/events/8.png',
+    ],
+    [
+      "",
+      "",
+      '/events/9.png',
+    ],
+    [
+      "",
+      "",
+      '/events/10.png',
+    ],
+    [
+      "",
+      "",
+      '/events/11.png',
+    ],
+    [
+      "",
+      "",
+      '/events/12.png',
+    ],
+    [
+      "",
+      "",
+      '/events/13.png',
     ],
   ];
   return (

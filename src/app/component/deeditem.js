@@ -1,7 +1,7 @@
 import React from "react";
 function Deeditem({ duedate, country, url }) {
   return (
-    <div className="z-20 relative w-3/4 mr-5 shadow-red-500 shadow-xl">
+    <div className="z-20 relative ,d:w-3/4 mr-5">
       <img src={url} className="rounded" />
       <div className="absolute bottom-2 left-2">
         <div className="text-xl font-bold xl:text-7xl">{duedate}</div>

@@ -1,13 +1,13 @@
 "use client";
 import React, { useState } from "react";
-const map_embed_uri="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2673.642657898936!2d106.91580111200273!3d47.92395136588932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d96924267749e5d%3A0x846e6453de9db3b0!2sNUM%2C%20Building%203!5e0!3m2!1sen!2smn!4v1684661485693!5m2!1sen!2smn"
+const map_embed_uri="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167.13585385455482!2d106.92179010939067!3d47.913677153466935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d96932a6aaaaa95%3A0xd97e77fafd4f35a2!2sUrgoo%203%20IMAX!5e0!3m2!1sen!2smn!4v1684769188121!5m2!1sen!2smn"
 export default function Location() {
   return (
     <section
       id="location"
-      className="p-10 items-center"
+      className="px-2 py-10 items-center"
     >
-      <div className="h-2/5 mt-4 flex flex-col xl:mt-7 xl:flex-row lg:px-20">
+      <div className="h-2/5 mt-4 flex flex-col xl:mt-7 xl:flex-row lg:mx-52">
         <div className="flex flex-col items-center justify-center bg-[#1C1C1C] lg:px-10">
           <div className="p-4 text-center text-2xl text-primary xl:p-0">
             <svg
@@ -27,7 +27,7 @@ export default function Location() {
             </svg>
             <p>ULAANBAATAR / MONGOLIA</p>
             <p className="text-white">
-            "SHUTIS 8 library"
+            "Urgoo 3, IMAX Shangri-La"
             </p>
           </div>
         </div>

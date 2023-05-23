@@ -2,14 +2,14 @@
 import React, { useContext, useEffect, useState } from "react";
 import Image from "next/image";
 import { dinnerRegister } from "@/constants";
-import dinner from "../assets/img/all/dinner.png";
 import drinks from "../assets/img/all/drinks.png";
 import UserContext from "../context/context";
-import Link from "next/link";
 
-const des_en_mn =
-  ["At this event, you can have dinner with influential Mongolian and foreign IT representatives. You'll also receive valuable guidance from respected experts, both local and international.","Энэхүү арга хэмжээнд та Монголын болон гадаадын мэдээллийн технологийн нөлөө бүхий төлөөлөгчидтэй оройн зоог барих боломжтой."];
-const rgrEN_MN=["REGISTER","БҮРТГҮҮЛЭХ"]
+const des_en_mn = [
+  "At this event, you can have dinner with influential Mongolian and foreign IT representatives. You'll also receive valuable guidance from respected experts, both local and international.",
+  "Энэхүү арга хэмжээнд та Монголын болон гадаадын мэдээллийн технологийн нөлөө бүхий төлөөлөгчидтэй оройн зоог барих боломжтой.",
+];
+const rgrEN_MN = ["To Register", "..."];
 
 function Dinner() {
   const [des, setDes] = useState(des_en_mn[0]);
@@ -27,28 +27,30 @@ function Dinner() {
   return (
     <div
       id="dinner"
-      className="relative h-full flex flex-col justify-between items-center  md:flex-row  z-10 lg:px-20 my-20"
+      className="flex flex-col md:flex-row pb-20 relative mx-2 lg:mx-24 items-center lg:justify-center "
     >
-      {/* bg-defbggray */}
-      <div className="text-center w-4/5 lg:w-1/2 md:w-3/5 md:mx-20 z-20 text-white font-medium text-sm lg:text-4xl font-Fugaz italic">
-        {des}
-      </div>
-      <div className="w-3/5 lg:w-1/2 py-10 md:w-3/5 md:p-0 flex flex-col lg:flex-row justify-center z-20 items-center">
+      <div className="flex flex-col md:flex-row justify-between items-center z-0 md:py-10 lg:py-32 lg:px-24 shadow-home lg:w-5/6 lg:justify-center">
         <Image
-          src={dinner}
           alt="dinner"
-          className="w-2/3 h-1/2 lg:h-32 lg:w-1/2"
+          className="z-10 hidden md:flex din_eve"
+          src={drinks}
         />
-        <div className="lg:w-1/3">
-          <div className="text-white text-2xl font-medium ">
-            7 June 2023, Elixer
+        <div className="md:w-3/4 z-30 text-right">
+          <div className="text-2xl md:text-5xl font-bold text-white my-10">
+            Cloud Connect Ulaanbaatar: AWS Networking Dinner for Enterprise Companies
           </div>
-          <Image src={drinks} alt="drinks" className="w-full" />
-          <a  target="_blank" href={dinnerRegister}>
-            <div className="bg-primary hover:bg-primarydark text-gray-100 font-bold text-center rounded cursor-pointer py-1">
+          <div className="text-xl md:text-3xl font-medium text-white my-3 italic md:pl-40">
+            {des}
+          </div>
+          <span className='text-white font-medium text-xl'>
+            <a
+              target="_blank"
+              href={dinnerRegister}
+              className="inline font-semibold px-3 py-1 md:px-6 md:py-2 bg-pink rounded-sm cursor-pointer md:text-xl"
+            >
               {register}
-            </div>
-          </a>
+            </a>
+          </span>
         </div>
       </div>
     </div>

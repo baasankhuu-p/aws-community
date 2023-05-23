@@ -3,7 +3,7 @@ import React, { useState, useEffect, useContext } from "react";
 import UserContext from "../context/context";
 
 export default function Counter() {
-  var countDownDate = new Date("June 30, 2023 23:00:59").getTime();
+  var countDownDate = new Date("June 07,2023, 12:00:00").getTime();
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
@@ -61,7 +61,7 @@ export default function Counter() {
   return (
     <div className="relative md:pt-10">
       {days > 0 || hours > 0 || minutes > 0 || seconds > 0 ? (
-        <div className=" flex flex-row justify-between w-full md:w-2/3 items-center font-medium">
+        <div className="flex flex-row justify-between w-full md:w-2/5 items-center font-medium">
           <div
             className="flex flex-col items-center justify-center p-2 md:p-4"
             style={{ color: "#00a3ee" }}

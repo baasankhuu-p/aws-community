@@ -5,7 +5,7 @@ import AWSLogo from "../assets/img/aws-ub.png";
 function Logo() {
   return (
     <div className="flex flex-row justify-between z-10">
-      <Image src={AWSLogo} alt="AWS COMMUNITY" className="w-28 my-4 "/>
+      <Image src={AWSLogo} alt="AWS COMMUNITY" className="w-28 "/>
     </div>
   );
 }

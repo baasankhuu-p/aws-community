@@ -3,37 +3,29 @@ import React from "react";
 
 function Organize() {
   let organizes = [
-    ["Fibo", require("../assets/img/organize/fibo.png")],
+    ["Fibo", require("../assets/img/organize/logo_fibo.png")],
     [
       "cloud community ulaanbaatar",
-      require("../assets/img/organize/cloud.png"),
+      require("../assets/img/organize/cloud_logo.png"),
     ],
-    [
-      "cloud academy",
-      require("../assets/img/organize/cloud_academy.jpg"),
-    ],
+    ["cloud academy", require("../assets/img/organize/cloud_academy_logo.png")],
   ];
+
   return (
-    <div className="mt-20">
-      <div className=" text-white text-center text-7xl font-bold">
+    <div className="mt-10 md:mt-20 mx-2 lg:mx-48">
+      <div className=" text-white text-center text-5xl xl:text-7xl font-bold">
         Organizer
       </div>
-      <div className="flex flex-col md:flex-row items-center justify-center my-10">
-        <Image
-          src={organizes[0][1]}
-          alt={organizes[0][0]}
-          className="w-60 h-32 my-2 mx-10 rounded-sm"
-        />
-        <Image
-          src={organizes[1][1]}
-          alt={organizes[1][0]}
-          className="w-60 h-32 my-2 mx-10 rounded-sm"
-        />
-        <Image
-          src={organizes[2][1]}
-          alt={organizes[2][0]}
-          className="w-60 h-32 my-2  mx-10 rounded-sm"
-        />
+      <div className="flex md:flex-row flex-wrap items-center justify-center my-10 ">
+        {organizes.map(([title, url], index) => (
+          <Image
+            src={url}
+            alt={title}
+            className="my-2 rounded-sm mx-2"
+            style={{width:'286px' ,height:'auto'}}
+            key={index}
+          />
+        ))}
       </div>
     </div>
   );

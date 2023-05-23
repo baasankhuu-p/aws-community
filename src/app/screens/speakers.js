@@ -1,98 +1,135 @@
-'use client'
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import { IoMdCloseCircleOutline } from "react-icons/io";
 function Speakers() {
   const speacker_info = [
     [
-      "Jayson E. Street",
-      "CyberSecurity Expert",
-      "",
+      "Victor Vedmich",
+      "Senior Developer Advocate at AWS",
+      "./speakers/1.png",
+      "Learn more",
+      "Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem",
     ],
     [
-      "Jayson E. Street",
-      "CyberSecurity Expert",
-      "",
+      "Almas Moldakanov",
+      "Territory Manager at Amazon Web Services",
+      "./speakers/2.png",
+      "Learn more",
+      "Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem",
     ],
     [
-      "Jayson E. Street",
-      "CyberSecurity Expert",
-      "",
+      "Victor Vedmich",
+      "Senior Developer Advocate at AWS",
+      "./speakers/3.png",
+      "Learn more",
+      "Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem",
     ],
     [
-      "Jayson E. Street",
-      "CyberSecurity Expert",
-      "",
+      "Ganjiguur Natsagdorj",
+      "Co-Founder at FIBO CLOUD",
+      "./speakers/4.png",
+      "Learn more",
+      "Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem",
     ],
-    [
-      "Jayson E. Street",
-      "CyberSecurity Expert",
-      "",
-    ]
+    ["", "", ""],
+    ["", "", ""],
   ];
+
+  const [detailsmodal, setdetailsModal] = useState(false);
+  const [speaker, setSpeaker] = useState(null);
+  const onHandlerSpeaker = (el) => {
+    console.log(el);
+    setdetailsModal(true);
+    setSpeaker(el);
+  };
+  const closeModal = () => {
+    setdetailsModal(false);
+  };
   return (
-    <section id="speakers" className="w-full min-h-screen px-10 md:px-48 md:pb-20 flex flex-col justify-center">
-      <div className="flex flex-col justify-between gap-5 md:gap-0">
+    <section
+      id="speakers"
+      className="w-full min-h-screen px-10 md:px-48 md:pb-20 flex flex-col justify-center"
+    >
+      <div className="flex flex-col justify-between">
         <h4 className="block font-futura font-bold uppercase -tracking-wider xl:text-7xl xl:tracking-normal text-3xl text-white">
-          <span className="khs relative top-5 block font-fugaz-one text-xl text-primary xl:left-8 xl:top-8 xl:text-3xl left-4 ">
+          <span className="relative top-5 block text-xl text-primary xl:text-3xl my-4">
             line up
           </span>
-          Speakers
+          <div>Speakers</div>
         </h4>
       </div>
       <div className="mt-20 grid gap-[2px] md:grid-cols-2 xl:grid-cols-3">
-        {speacker_info.map(([name,rank,pro_url],index)=>
-        <div key={index} className=" relative flex aspect-square flex-col items-start justify-between p-6 shadow-speaker" style={{backgroundImage:'url(/bg1.svg)',backgroundSize:'auto 150%'}}>
-        <span
-          style={{
-            boxSizing: "border-box",
-            display: "block",
-            overflow: "hidden",
-            width: "initial",
-            height: "initial",
-            background: "none",
-            opacity: 1,
-            border: "0px",
-            margin: "0px",
-            padding: "0px",
-            position: "absolute",
-            inset: "0px",
-          }}
-        >
-          <img
-            src={pro_url}
+        {speacker_info.map((el, index) => (
+          <div
+            key={index}
+            className=" relative flex aspect-square flex-col items-start justify-between p-6 shadow-speaker"
             style={{
-              position: "absolute",
-              inset: "0px",
-              boxSizing: "border-box",
-              padding: "0px",
-              border: "none",
-              margin: "auto",
-              display: "block",
-              width: "0px",
-              height: "0px",
-              minWidth: "100%",
-              maxWidth: "100%",
-              minHeight: "100%",
-              maxHeight: "100%",
-              objectFit: "cover",
+              backgroundImage: "url(/bg1.svg)",
+              backgroundSize: "auto 150%",
             }}
-          />
-        </span>
-        <div className="text-white relative z-[1] flex h-full flex-col items-start justify-between">
-          <div>
-            <h5 className="text-2xl font-bold uppercase xl:text-3xl">
-              {name}
-            </h5>
-            <p className="mt-2 text-sm uppercase xl:text-lg">
-              {rank}
-            </p>
+          >
+            <img
+              src={el[2]}
+              style={{
+                position: "absolute",
+                inset: "0px",
+                boxSizing: "border-box",
+                padding: "0px",
+                border: "none",
+                display: "block",
+                minWidth: "100%",
+                maxWidth: "100%",
+                minHeight: "100%",
+                maxHeight: "100%",
+                objectFit: "cover",
+                bottom: 0,
+                right: 0,
+              }}
+            />
+            <div className="text-white relative z-[1] flex h-full flex-col items-start justify-end lg:justify-between">
+              <div>
+                <h5 className="text-xl font-bold lg:text-2xl">{el[0]}</h5>
+                <p className="mt-1 text-sm md:text-xl capitalize">{el[1]}</p>
+              </div>
+              {el[3] && (
+                <button
+                  onClick={() => {
+                    onHandlerSpeaker(el);
+                  }}
+                  className="relative mb-1 text-xs md:text-sm font-medium uppercase tracking-widest transition-colors after:absolute after:-bottom-[10px] after:left-0 after:h-[2px] text-prim after:w-32 after:bg-primary hover:text-white hover:after:bg-white focus:text-white focus:outline-0  text-primary"
+                >
+                  {el[3]}
+                </button>
+              )}
+            </div>
           </div>
-          <button className="relative mb-4 text-sm font-medium uppercase tracking-widest transition-colors after:absolute after:-bottom-[10px] after:left-0 after:h-[2px] after:w-32 after:bg-primary hover:text-white hover:after:bg-white focus:text-white focus:outline-0 focus:after:bg-white focus-visible:ring-2 focus-visible:ring-white focus-visible:after:bg-transparent group-hover:after:bg-white">
-            Learn more
-          </button>
-        </div>
+        ))}
       </div>
-        )}
-      </div>
+      {detailsmodal && speaker && (
+        <>
+          <div
+            className=" fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center z-40"
+            style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
+          >
+            <div className=" relative bg-black p-5 rounded z-50 mx-1 md:w-2/3 h-1/2 border-2 border-primary flex flex-col justify-center items-start text-white">
+              <IoMdCloseCircleOutline
+                className="w-10 h-10 text-slate-400 hover:text-white cursor-pointer absolute right-5 top-5"
+                onClick={closeModal}
+              />
+              <div className="text-2xl md:text-3xl lg:6xl font-bold py-2">
+                {speaker[0]}
+              </div>
+              <div className="w-auto h-1/2 md:h-3/4 md:mt-5 flex flex-row items-center ">
+                <img src={speaker[2]} className="w-auto h-full" />
+                <div className="md:mx-2 lg:mx-5 ">
+                  <div className="text-sm md:text-xl lg:4xl py-2">{speaker[1]}</div>
+                  <div className="text-sm md:text-xl lg:4xl">{speaker[4]}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
     </section>
   );
 }
