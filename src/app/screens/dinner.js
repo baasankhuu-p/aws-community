@@ -42,20 +42,20 @@ function Dinner() {
           src={drinks}
         />
         <div className="md:w-3/4 z-30 text-right">
-          <div className="font-bold text-white my-4" style={{fontSize:'30px'}}>
+          <div className="font-bold text-white my-4" style={{fontSize:'16px'}}>
           Cloud Connect Ulaanbaatar: AWS Networking Dinner for Enterprise Companies
           </div>
-          <div className="font-medium text-white my-3 italic md:pl-40" style={{fontSize:'16px'}}>
+          <div className="font-medium text-white my-3 italic md:pl-40" style={{fontSize:'12px'}}>
             {des}
           </div>
-          <div className="md:sm md:text-xl font-medium text-white italic mt-10 mb-5" style={{fontSize:'12px'}}>
+          <div className="md:sm md:text-xl font-medium text-white italic mt-10 mb-5" style={{fontSize:'8px'}}>
             {dateTime}
           </div>
           <span className='text-white font-medium text-xl'>
             <a
               target="_blank"
               href={dinnerRegister}
-              className="inline font-semibold px-3 py-1 md:px-6 md:py-2 bg-pink rounded-sm cursor-pointer md:text-xl"
+              className="inline font-semibold  bg-pink rounded-sm cursor-pointer px-4 py-2" style={{fontSize:'16px'}}
             >
               {register}
             </a>

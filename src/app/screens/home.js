@@ -42,7 +42,7 @@ function Home() {
       <div className="flex flex-col md:flex-row justify-between items-center z-0 md:py-10 lg:py-16 lg:px-24 shadow-home lg:w-5/6 lg:justify-center">
         <div className="w-full md:w-3/4 z-30 ">
           <Counter />
-          <div className=" font-bold text-white my-4 w-full" style={{fontSize:'30px'}}>
+          <div className=" font-bold text-white my-4 w-full" style={{fontSize:'16px'}}>
             <div>
               AWS Community Day&nbsp;
               <span className="font-black" style={{ color: "#00b4fc" }}>
@@ -50,17 +50,17 @@ function Home() {
               </span>
             </div>
           </div>
-          <div className="font-medium text-white my-1 italic md:pr-40" style={{fontSize:'16px'}}>
+          <div className="font-medium text-white my-1 italic md:pr-40" style={{fontSize:'12px'}}>
             {description}
           </div>
           <div className="md:sm md:text-xl font-medium text-white italic mt-5 mb-5" style={{fontSize:'12px'}}>
             {dateTime}
           </div>
-          <span className='text-white font-medium md:text-xl'>
+          <span className='text-white font-medium md:text-xl' style={{fontSize:'16px'}}>
             <a
               target="_blank"
               href={ticketURL}
-              className="inline font-semibold px-3 py-1 md:px-6 md:py-2 bg-pink rounded-sm cursor-pointer"
+              className="inline font-semibold px-4 py-2 bg-pink rounded-sm cursor-pointer"
             >
               {TICKET[0]}
             </a>

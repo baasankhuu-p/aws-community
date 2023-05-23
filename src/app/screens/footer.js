@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 import React from "react";
 const mail = [
   ["info@fibo.edu.mn"],
@@ -38,7 +38,8 @@ function Footer() {
             <li key={index}>
               <a
                 target="_blank"
-                className="py-1 hover:text-primary hover:underline hover:underline-offset-4 focus:outline-0 focus:ring-2 focus:ring-primary text-xs md:text-sm lg:text-xl"
+                className="py-1 hover:text-primary hover:underline hover:underline-offset-4 focus:outline-0 focus:ring-2 focus:ring-primary"
+                style={{ fontSize: "16px" }}
                 href={url}
               >
                 {title}
@@ -54,7 +55,8 @@ function Footer() {
             <li>
               <a
                 key={index}
-                className="px-2 hover:text-primary hover:underline hover:underline-offset-4 focus:outline-0 focus:ring-2 focus:ring-primary text-xs md:text-sm lg:text-xl"
+                className="px-2 hover:text-primary hover:underline hover:underline-offset-4 focus:outline-0 focus:ring-2 focus:ring-primary"
+                style={{ fontSize: "16px" }}
                 href={`mailto:${mailname}`}
               >
                 {mailname}
@@ -66,7 +68,8 @@ function Footer() {
               <>
                 <a
                   key={index}
-                  className="px-2 hover:text-primary hover:underline hover:underline-offset-4 focus:outline-0 focus:ring-2 focus:ring-primary text-xs md:text-sm lg:text-xl"
+                  className="px-2 hover:text-primary hover:underline hover:underline-offset-4 focus:outline-0 focus:ring-2 focus:ring-primary"
+                  style={{ fontSize: "16px" }}
                   href={`tel:${phone}`}
                 >
                   +976-{phone}
@@ -78,11 +81,18 @@ function Footer() {
       </div>
       <div className="my-5 text-center">
         <p>
-          © AWS<span className="text-primary "> User Group of Mongolia</span> / 2023 / All
-          Rights Reserved
-        </p> 
+          © AWS<span className="text-primary "> User Group of Mongolia</span> /
+          2023 / All Rights Reserved
+        </p>
       </div>
-        <div className="absolute bottom-16 right-0 "><div><Link href="/contruct" className=" hover:underline">Code of conducts</Link> 2023</div></div>
+      <div className="absolute top-1 right-5">
+        <div>
+          <Link href="/contruct" className=" hover:underline">
+            Code of conducts
+          </Link>{" "}
+          2023
+        </div>
+      </div>
     </footer>
   );
 }
