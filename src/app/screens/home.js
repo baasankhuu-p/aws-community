@@ -37,7 +37,7 @@ function Home() {
   return (
     <div
       id="home"
-      className="flex flex-col md:flex-row py-20 relative mx-2 my-5 items-center lg:justify-center"
+      className="flex flex-col md:flex-row py-20 relative mx-2 my-25 md:my:10 items-center lg:justify-center"
     >
       <div className="flex flex-col md:flex-row justify-between items-center z-0 md:py-10 lg:py-16 lg:px-24 shadow-home lg:w-5/6 lg:justify-center">
         <div className="w-full md:w-3/4 z-30 ">

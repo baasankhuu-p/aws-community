@@ -4,7 +4,7 @@ import Contruct from '../screens/contruct'
 
 function page() {
   return (
-    <div className="bg-black min-h-screen min-w-full text-white "
+    <div className="bg-black min-h-screen min-w-full text-white"
     style={{
       zIndex: 0,
       overflow: "hidden",

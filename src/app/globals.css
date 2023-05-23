@@ -101,3 +101,10 @@
   box-shadow: 
     rgba(223, 151, 44, 0.4) 20px 15px 12px,rgb(223, 151, 44) 0px 9px 38px;
 }
+.contruct{
+  background-color: rgba(0,0,0,0.8); 
+  cursor:copy;
+}
+.contruct:hover{
+  background-color: rgba(0, 0, 0, 0.9);
+}

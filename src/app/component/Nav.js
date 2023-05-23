@@ -20,12 +20,12 @@ export default function Nav() {
         <div onClick={state.ChangeLn} className="flex items-center my-auto py-1 px-4 mx-4 text-center rounded-full hover:bg-primary border-primary text-white bg-black cursor-pointer headernav" style={{borderWidth:1}}>
           {state.ln}
         </div>
-        <nav className="hidden md:flex flex-row bg-black justify-between rounded-full border-primary items-center px-2" style={{borderWidth:1}}>
+        <nav className="hidden md:flex flex-row bg-black justify-between rounded-full border-primary items-center px-8" style={{borderWidth:1}}>
           {navs.map(([nav, url], index) => (
             <a
               key={index}
               href={url}
-              className=" text-center w-full hover:text-primary uppercase mx-1 px-1 headernav"
+              className=" text-center w-full hover:text-primary uppercase mx-1 headernav px-4"
             >
               {nav}
             </a>
