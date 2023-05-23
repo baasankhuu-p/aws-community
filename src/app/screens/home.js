@@ -15,7 +15,7 @@ const desEn_mn = [
 ];
 const tcketEn_mn = [
   ["Buy Ticket", "Only 200 seats"],
-  ["Тасалбар худалдаж авах", "Ердөө 200 суудалтай"],
+  ["Тасалбар авах", "Ердөө 200 суудалтай"],
 ];
 function Home() {
   const [description, setDescription] = useState(desEn_mn[0]);

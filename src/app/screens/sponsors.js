@@ -14,7 +14,7 @@ function Sponsors() {
       <h1 className="z-1 relative text-center text-4xl font-bold capitalize xl:text-5xl text-white">
         Sponsors
       </h1>
-        <div className="w-screen flex flex-row justify-center flex-wrap">
+        <div className="flex flex-row justify-center flex-wrap">
           {sponsors.map(([sponsor, image], index) => (
               <div key={index} className="flex justify-center items-center m-5">
                 <Image src={image} alt={sponsor} style={{width:'320px', height:'auto'}}/>
