@@ -6,33 +6,33 @@ function Speakers() {
     [
       "Victor Vedmich",
       "Senior Developer Advocate at AWS",
-      "./speakers/1.png",
+      "./speakers/1.webp",
       "Learn more",
       "Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem",
     ],
     [
       "Almas Moldakanov",
       "Territory Manager at Amazon Web Services",
-      "./speakers/2.png",
+      "./speakers/2.webp",
       "Learn more",
       "Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem",
     ],
     [
       "Egor Miasnikov",
       "Solutions Architect at AWS | 5x AWS Certified | ex-EPAM | ex-Google",
-      "./speakers/3.png",
+      "./speakers/3.webp",
       "Learn more",
       "Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem",
     ],
     [
       "Ganjiguur Natsagdorj",
       "Co-Founder at FIBO CLOUD",
-      "./speakers/4.png",
+      "./speakers/4.webp",
       "Learn more",
       "Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem",
     ],
-    ["", "", ""],
-    ["", "", ""],
+    [],
+    [],
   ];
 
   const [detailsmodal, setdetailsModal] = useState(false);
@@ -68,7 +68,7 @@ function Speakers() {
               backgroundSize: "auto 150%",
             }}
           >
-            <img
+            {el[3] && <img
               src={el[2]}
               style={{
                 position: "absolute",
@@ -86,7 +86,7 @@ function Speakers() {
                 right: 0,
               }}
               alt={`speakers ${el[0]}`}
-            />
+            />}
             <div className="text-white relative z-[1] flex h-full flex-col items-start justify-end ">
               <div>
                 <h5 className=" text-sm font-bold lg:text-xl">{el[0]}</h5>
