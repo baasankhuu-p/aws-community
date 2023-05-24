@@ -33,6 +33,7 @@ export default function Location() {
         </div>
           <div className="relative h-[200px] xl:h-[400px] xl:flex-[3]">
             <iframe
+              title="Maps to 'shangri la urgoo'"
               src={map_embed_uri}
               className=" border-0 w-full h-full"
               loading="lazy"

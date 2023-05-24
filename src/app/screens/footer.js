@@ -32,7 +32,7 @@ function Footer() {
       <div className="mt-10 px-2 px:0 flex justify-between md:justify-around relative">
         <ul className=" flex-col lg:flex">
           <li className="mb-4 py-1 font-bold text-sm md:text-lg lg:text-2xl text-primary underline underline-offset-4 focus:outline-0">
-            <h5>Social links</h5>
+            <div className=" text-2xl">Social links</div>
           </li>
           {social_links.map(([title, url], index) => (
             <li key={index}>
@@ -49,7 +49,7 @@ function Footer() {
         </ul>
         <ul className="flex flex-col gap-2 xl:text-left">
           <li className="mb-5 py-1 font-bold text-sm md:text-lg lg:text-2xl  text-primary underline underline-offset-4 focus:outline-0">
-            <h5>Contacts</h5>
+            <div className=" text-2xl">Contacts</div>
           </li>
           {mail.map(([mailname], index) => (
             <li>
