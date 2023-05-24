@@ -120,7 +120,7 @@ function Speakers() {
                 {speaker[0]}
               </div>
               <div className="w-auto h-1/2 md:h-3/4 md:mt-5 flex flex-row items-center ">
-                <img src={speaker[2]} className="w-auto h-full" />
+                <img src={speaker[2]} className="w-auto h-full" alt={speaker[0]}/>
                 <div className="md:mx-2 lg:mx-5 ">
                   <div className="text-sm md:text-xl lg:4xl py-2">{speaker[1]}</div>
                   <div className="text-sm md:text-xl lg:4xl">{speaker[4]}</div>
