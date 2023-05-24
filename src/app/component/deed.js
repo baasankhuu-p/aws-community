@@ -7,67 +7,67 @@ export default function Deed() {
     [
       "",
       "",
-      '/events/1.png',
+      '/events/1.webp',
     ],
     [
       "",
       "",
-      '/events/2.png',
+      '/events/2.webp',
     ],
     [
       "",
       "",
-      '/events/3.png',
+      '/events/3.webp',
     ],
     [
       "",
       "",
-      '/events/4.png',
+      '/events/4.webp',
     ],
     [
       "",
       "",
-      '/events/5.png',
+      '/events/5.webp',
     ],
     [
       "",
       "",
-      '/events/6.png',
+      '/events/6.webp',
     ],
     [
       "",
       "",
-      '/events/7.png',
+      '/events/7.webp',
     ],
     [
       "",
       "",
-      '/events/8.png',
+      '/events/8.webp',
     ],
     [
       "",
       "",
-      '/events/9.png',
+      '/events/9.webp',
     ],
     [
       "",
       "",
-      '/events/10.png',
+      '/events/10.webp',
     ],
     [
       "",
       "",
-      '/events/11.png',
+      '/events/11.webp',
     ],
     [
       "",
       "",
-      '/events/12.png',
+      '/events/12.webp',
     ],
     [
       "",
       "",
-      '/events/13.png',
+      '/events/13.webp',
     ],
   ];
   return (
