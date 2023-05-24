@@ -85,6 +85,7 @@ function Speakers() {
                 bottom: 0,
                 right: 0,
               }}
+              alt={`speakers ${el[0]}`}
             />
             <div className="text-white relative z-[1] flex h-full flex-col items-start justify-end ">
               <div>
