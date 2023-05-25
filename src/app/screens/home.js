@@ -10,8 +10,8 @@ const dateEn_mn = [
   "2023 оны 6 сарын 7 12:00 - Өргөө 3 IMAX Шангри-Ла",
 ];
 const desEn_mn = [
-  " Be part of the first-ever AWS Community Day in Ulaanbaatar! Listen to local and international cloud experts share their knowledge in easy-to-understand talks. Join us to learn more about advanced cloud topics and connect with like-minded individuals. Don't miss this special event to improve your cloud skills and network with others in the community!",
-  "..",
+  "Be part of the first-ever AWS Community Day in Ulaanbaatar! Listen to local and international cloud experts share their knowledge in easy-to-understand talks. Join us to learn more about advanced cloud topics and connect with like-minded individuals. Don't miss this special event to improve your cloud skills and network with others in the community!",
+  "Be part of the first-ever AWS Community Day in Ulaanbaatar! Listen to local and international cloud experts share their knowledge in easy-to-understand talks. Join us to learn more about advanced cloud topics and connect with like-minded individuals. Don't miss this special event to improve your cloud skills and network with others in the community!",
 ];
 const tcketEn_mn = [
   ["Buy Ticket", "Only 200 seats"],

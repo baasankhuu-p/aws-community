@@ -5,7 +5,7 @@ import UserContext from "../context/context";
 
 const shortintr_en_mn = [
   "Since 2018, our community has expanded to over 4,000 members, hosting over 30 events for cloud technology enthusiasts. We are excited to announce our first AWS event in Mongolia, a significant milestone for us in the country",
-  "mn ...",
+  "Since 2018, our community has expanded to over 4,000 members, hosting over 30 events for cloud technology enthusiasts. We are excited to announce our first AWS event in Mongolia, a significant milestone for us in the country",
 ];
 
 export default function About() {

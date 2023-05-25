@@ -16,7 +16,17 @@ const con_en = [
   ["15:50 - 16:30","Kahoot Quiz Prizes / Closing Address / Photograph"]
 ];
 const con_mn = [
-  ["12:00 - 12:20", "Орчуулга"],
+  ["12:00 - 12:20","Registration and Foods"],
+  ["12:20 - 12:30","Opening Welcome"],
+  ["12:30 - 13:00","Speech 1: Topic and speaker to be determined"],
+  ["13:00 - 13:30","Speech 2: Topic and speaker to be determined"],
+  ["13:30 - 14:00","Speech 3: Topic and speaker to be determined"],
+  ["14:00 - 14:20","Speech 4: Topic and speaker to be determined"],
+  ["14:20 - 14:50","Coffee break"],
+  ["14:50 - 15:10","Speech 5: Topic and speaker to be determined"],
+  ["15:10 - 15:30","Speech 6: Topic and speaker to be determined"],
+  ["15:30 - 15:50","Speech 7: Topic and speaker to be determined"],
+  ["15:50 - 16:30","Kahoot Quiz Prizes / Closing Address / Photograph"]
 ];
 const dinner_en = [
   ["18:00 - 18:30","Registration and Foods"],
@@ -29,7 +39,14 @@ const dinner_en = [
   ["19:00 - 19:20","Keynote 2: Architecture (speaker to be determined)"]
 ];
 const dinner_mn = [
-  ["12:00 - 12:20", "Орчуулга"],
+  ["18:00 - 18:30","Registration and Foods"],
+  ["18:30 - 18:40","Opening Welcome"],
+  ["18:40 - 19:00","Keynote 1: How AWS helps entreprise companies (speaker to be determined)"],
+  ["19:00 - 19:20","Keynote 2: Architecture (speaker to be determined)"],
+  ["19:20 - 19:40","Keynote 3: Topic and speaker to be determined"],
+  ["19:40 - 20:00","Sponsor time"],
+  ["20:00 - 21:00","Free networking and Photograph"],
+  ["19:00 - 19:20","Keynote 2: Architecture (speaker to be determined)"]
 ];
 function Schedule() {
   const [visibleVal, setvisibleVal] = useState("CONFERENCE");

@@ -1,7 +1,26 @@
 "use client";
 import React, { useState, useEffect, useContext } from "react";
 import UserContext from "../context/context";
-
+const dateMN_EN = [
+  [
+    {
+      DAYS: "DAYS",
+      HOURS: "HOURS",
+      MINUTES: "MINUTES",
+      SECONDS: "SECONDS",
+      EXPIRED: "EXPIRED",
+    },
+  ],
+  [
+    {
+      DAYS: "ӨДӨР",
+      HOURS: "ЦАГ",
+      MINUTES: "МИНУТ",
+      SECONDS: "СЕКУНД",
+      EXPIRED: "ДУУССАН",
+    },
+  ],
+];
 export default function Counter() {
   var countDownDate = new Date("June 07,2023, 12:00:00").getTime();
   const [days, setDays] = useState(0);
@@ -28,34 +47,15 @@ export default function Counter() {
       clearInterval(interval);
     };
   }, []);
-  const [nomenclature,setNomenclature]=useState({
-    DAYS:"DAYS",
-    HOURS:"HOURS",
-    MINUTES:"MINUTES",
-    SECONDS:"SECONDS",
-    EXPIRED:"EXPIRED"
-  })
+  const [nomenclature, setNomenclature] = useState(dateMN_EN[0]);
   //change language
   const state = useContext(UserContext);
 
   useEffect(() => {
-    if(state.ln=='MN'){
-      setNomenclature({
-        DAYS:"ӨДӨР",
-        HOURS:"ЦАГ",
-        MINUTES:"МИНУТ",
-        SECONDS:"СЕКУНД",
-        EXPIRED:"ДУУССАН"
-      })
-    }
-    else{
-      setNomenclature({
-        DAYS:"DAYS",
-        HOURS:"HOURS",
-        MINUTES:"MINUTES",
-        SECONDS:"SECONDS",
-        EXPIRED:"EXPIRED"
-      })
+    if (state.ln == "MN") {
+      setNomenclature(dateMN_EN[1]);
+    } else {
+      setNomenclature(dateMN_EN[0]);
     }
   }, [state.ln]);
   return (
