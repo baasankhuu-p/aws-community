@@ -17,9 +17,6 @@ export default function Nav() {
   return (
     <>
       <div className=" text-white flex flex-row justify-between lg:justify-center">
-        <div onClick={state.ChangeLn} className="flex items-center my-auto py-1 px-4 mx-4 text-center rounded-full hover:bg-primary border-primary text-white bg-black cursor-pointer headernav" style={{borderWidth:1}}>
-          {state.ln}
-        </div>
         <nav className="hidden md:flex flex-row bg-black justify-between rounded-full border-primary items-center px-8" style={{borderWidth:1}}>
           {navs.map(([nav, url], index) => (
             <a
@@ -71,7 +68,7 @@ export default function Nav() {
       <a
         href={WATCH[0]}
         target="_blank"
-        className="hidden px-2 py-1 md:block lg:px-8  bg-primary hover:bg-primarydark rounded text-white headernav"
+        className="hidden py-1 md:block text-center w-32  bg-primary hover:bg-primarydark rounded text-white headernav"
       >
         {WATCH[1]}
       </a>

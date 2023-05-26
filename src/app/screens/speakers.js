@@ -6,32 +6,36 @@ function Speakers() {
     [
       "Victor Vedmich",
       "Senior Developer Advocate at AWS",
-      "./speakers/1.webp",
+      "./speakers/1.png",
       "Learn more",
       "Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem",
     ],
     [
       "Almas Moldakanov",
       "Territory Manager at Amazon Web Services",
-      "./speakers/2.webp",
+      "./speakers/2.png",
       "Learn more",
       "Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem",
     ],
     [
       "Egor Miasnikov",
       "Solutions Architect at AWS | 5x AWS Certified | ex-EPAM | ex-Google",
-      "./speakers/3.webp",
+      "./speakers/3.png",
       "Learn more",
       "Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem",
     ],
     [
       "Ganjiguur Natsagdorj",
       "Co-Founder at FIBO CLOUD",
-      "./speakers/4.webp",
+      "./speakers/4.png",
       "Learn more",
       "Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem",
     ],
-    [],
+    ["Gundsambuu",
+    "#",
+    "./speakers/5.png",
+    "Learn more",
+    "#",],
     [],
   ];
 
@@ -63,10 +67,6 @@ function Speakers() {
           <div
             key={index}
             className=" relative flex aspect-square flex-col items-start justify-between p-2 shadow-speaker"
-            style={{
-              backgroundImage: "url(/bg1.svg)",
-              backgroundSize: "auto 150%",
-            }}
           >
             {el[3] && <img
               src={el[2]}
@@ -87,7 +87,8 @@ function Speakers() {
               }}
               alt={`speakers ${el[0]}`}
             />}
-            <div className="text-white relative z-[1] flex h-full flex-col items-start justify-end ">
+            <div className="text-white relative z-[1] flex h-full flex-col w-full items-start justify-end">
+              <div className={` bg-black w-full p-2 ${el[3] && 'shadow-home'}`}>
               <div>
                 <h5 className=" text-sm font-bold lg:text-xl">{el[0]}</h5>
                 <p className="mt-1 text-xs lg:text-sm capitalize">{el[1]}</p>
@@ -102,6 +103,7 @@ function Speakers() {
                   {el[3]}
                 </button>
               )}
+              </div>
             </div>
           </div>
         ))}

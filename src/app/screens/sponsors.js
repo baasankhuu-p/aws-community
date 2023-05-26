@@ -15,8 +15,8 @@ function Sponsors() {
       </h1>
         <div className="flex flex-row justify-center flex-wrap">
           {sponsors.map(([sponsor, image], index) => (
-              <div key={index} className="flex justify-center items-center m-5">
-                <Image src={image} alt={sponsor} style={{width:'320px', height:'auto'}}/>
+              <div key={index} className="flex justify-center items-center m-4">
+                <Image src={image} alt={sponsor} style={{width:'280px', height:'auto'}}/>
               </div>
           ))}
         </div>

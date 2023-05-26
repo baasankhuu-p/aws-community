@@ -21,8 +21,8 @@ function Organize() {
           <Image
             src={url}
             alt={title}
-            className="my-2 rounded-sm mx-2"
-            style={{width:'320px' ,height:'auto'}}
+            className="my-2 rounded-sm mx-4"
+            style={{width:'280px' ,height:'auto'}}
             key={index}
           />
         ))}

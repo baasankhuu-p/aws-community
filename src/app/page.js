@@ -19,7 +19,7 @@ export default function Page() {return (
           className='home-bg'
         >
           <Home />
-          <Dinner />
+          {/* <Dinner /> */}
         </section>
         <About />
         <Schedule />
