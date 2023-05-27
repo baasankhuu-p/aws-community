@@ -77,6 +77,9 @@
     height: auto;
   }
 }
+.contructbg{
+  background-color: rgba(0, 0, 0, 0.8);
+}
 @media (min-width: 1024px) {
   .headernav{
     font-size: 20px;
@@ -84,6 +87,14 @@
   .din_eve{
     width: 250px;
     height: auto;
+  }
+  .contructbg{
+    z-index: 0;
+    overflow: hidden;
+    background-image: url(/bg1.svg);
+    background-size: cover;
+    background-position: center -200px;
+    background-repeat: no-repeat,
   }
 }
 @media (min-width: 1240px) {

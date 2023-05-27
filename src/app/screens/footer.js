@@ -32,14 +32,13 @@ function Footer() {
       <div className="mt-10 px-2 px:0 flex justify-between md:justify-around relative">
         <ul className=" flex-col lg:flex">
           <li className="mb-4 py-1 font-bold text-sm md:text-lg lg:text-2xl text-primary underline underline-offset-4 focus:outline-0">
-            <div className=" text-2xl">Social links</div>
+            <div className="text-lg md:text-2xl">Social links</div>
           </li>
           {social_links.map(([title, url], index) => (
             <li key={index}>
               <a
                 target="_blank"
-                className="py-1 hover:text-primary hover:underline hover:underline-offset-4 focus:outline-0 focus:ring-2 focus:ring-primary"
-                style={{ fontSize: "16px" }}
+                className="py-1 hover:text-primary hover:underline hover:underline-offset-4 focus:outline-0 focus:ring-2 focus:ring-primary text-xs md:text-base"
                 href={url}
               >
                 {title}
@@ -49,14 +48,13 @@ function Footer() {
         </ul>
         <ul className="flex flex-col gap-2 xl:text-left">
           <li className="mb-5 py-1 font-bold text-sm md:text-lg lg:text-2xl  text-primary underline underline-offset-4 focus:outline-0">
-            <div className=" text-2xl">Contacts</div>
+            <div className=" text-lg md:text-2xl">Contacts</div>
           </li>
           {mail.map(([mailname], index) => (
             <li>
               <a
                 key={index}
-                className="px-2 hover:text-primary hover:underline hover:underline-offset-4 focus:outline-0 focus:ring-2 focus:ring-primary"
-                style={{ fontSize: "16px" }}
+                className="px-2 hover:text-primary hover:underline hover:underline-offset-4 focus:outline-0 focus:ring-2 focus:ring-primary text-xs md:text-base"
                 href={`mailto:${mailname}`}
               >
                 {mailname}
@@ -68,8 +66,7 @@ function Footer() {
               <>
                 <a
                   key={index}
-                  className="px-2 hover:text-primary hover:underline hover:underline-offset-4 focus:outline-0 focus:ring-2 focus:ring-primary"
-                  style={{ fontSize: "16px" }}
+                  className="px-2 hover:text-primary hover:underline hover:underline-offset-4 focus:outline-0 focus:ring-2 focus:ring-primary text-xs md:text-base"
                   href={`tel:${phone}`}
                 >
                   +976-{phone}
@@ -85,7 +82,7 @@ function Footer() {
           2023 / All Rights Reserved
         </p>
       </div>
-      <div className="absolute top-1 right-5">
+      <div className="absolute top-1 right-5 ">
         <div>
           <Link href="/contruct" className=" hover:underline">
             Code of conducts

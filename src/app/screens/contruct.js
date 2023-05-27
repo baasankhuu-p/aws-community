@@ -2,7 +2,7 @@ import React from "react";
 
 function Contruct() {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center">
       <div className="md:w-2/3 p-10 my-24 lg:my-10 shadow-xl shadow-slate-700 contruct">
         <div className="text-center my-4 font-medium" style={{fontSize:'36px'}}>Code Of Conduct</div>
         <div style={{fontSize:'16px', lineHeight:'25px'}}>
