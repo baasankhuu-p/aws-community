@@ -4,10 +4,10 @@ import UserContext from "../context/context";
 const dateMN_EN = [
   [
     {
-      DAYS: "DAYS",
-      HOURS: "HOURS",
-      MINUTES: "MINUTES",
-      SECONDS: "SECONDS",
+      DAYS: "DAY",
+      HOURS: "HOUR",
+      MINUTES: "MINUTE",
+      SECONDS: "SECOND",
       EXPIRED: "EXPIRED",
     },
   ],
@@ -61,13 +61,13 @@ export default function Counter() {
   return (
     <div className="relative">
       {days > 0 || hours > 0 || minutes > 0 || seconds > 0 ? (
-        <div className="flex flex-row justify-between w-full md:w-2/5 items-center font-medium">
+        <div className="flex flex-row justify-around mx-2 md:mx-0 md:justify-between w-full md:w-2/5 items-center font-medium">
           <div
             className="flex flex-col items-center justify-center p-2 md:p-4"
             style={{ color: "#00a3ee" }}
           >
             <div className="text-2xl lg:text-4xl">{days > 0 ? days : "00"}</div>
-            <div className="text-lg">{nomenclature.DAYS}</div>
+            <div className="text-base">DAY</div>
           </div>
           <div
             className="flex flex-col items-center justify-center p-2 md:p-4"
@@ -76,7 +76,7 @@ export default function Counter() {
             <div className="text-2xl lg:text-4xl  ">
               {hours > 0 ? hours : "00"}{" "}
             </div>
-            <div className="text-lg">{nomenclature.HOURS}</div>
+            <div className="text-base">HOUR</div>
           </div>
           <div
             className="flex flex-col items-center justify-center p-2 md:p-4"
@@ -85,7 +85,7 @@ export default function Counter() {
             <div className="text-2xl lg:text-4xl  ">
               {minutes > 0 ? minutes : "00"}
             </div>
-            <div className="text-lg">{nomenclature.MINUTES}</div>
+            <div className="text-base">MINUTE</div>
           </div>
           <div
             className="flex flex-col items-center justify-center p-2 md:p-4"
@@ -94,11 +94,11 @@ export default function Counter() {
             <div className="text-2xl lg:text-4xl  ">
               {seconds > 0 ? seconds : "00"}
             </div>
-            <div className="text-lg">{nomenclature.SECONDS}</div>
+            <div className="text-base">SECONDS</div>
           </div>
         </div>
       ) : (
-        <div style={{ color: "#ff6386" }}>{nomenclature.EXPIRED}</div>
+        <div style={{ color: "#ff6386" }}>EXPIRED</div>
       )}
     </div>
   );

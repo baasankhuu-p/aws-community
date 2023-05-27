@@ -9,8 +9,8 @@ import Sponsors from "./screens/sponsors";
 import Location from "./screens/location";
 import Footer from "./screens/footer";
 import Organize from "./screens/orgonizer";
+import Techpartners from "./screens/techpartners";
 export default function Page() {return (
-  <div>
     <div className="bg-black min-h-screen min-w-full">
       {/*  bg-defbggray */}
       <Header />
@@ -29,12 +29,12 @@ export default function Page() {return (
         className='sponsor-bg'
         >
           <Sponsors />
+          <Techpartners/>
           <Organize />
         </section>
         <Location />
       </>
       <Footer />
     </div>
-  </div>
   );
 }

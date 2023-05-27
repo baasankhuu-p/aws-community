@@ -37,12 +37,12 @@ function Home() {
   return (
     <div
       id="home"
-      className="flex flex-col md:flex-row py-20 relative mx-2 my-25 md:my:10 items-center lg:justify-center lg:mt-16"
+      className="flex flex-col min-h-screen md:flex-row py-24 relative mx-4 md:mx-0 items-center lg:justify-center"
     >
-      <div className="flex flex-col md:flex-row justify-between items-center z-0 md:py-10 lg:py-16 lg:px-24 shadow-home lg:w-5/6 lg:justify-center">
+      <div className="flex flex-col md:flex-row justify-between items-center z-0 md:py-10 lg:py-10 lg:px-24 shadow-home lg:w-5/6 lg:justify-center my-auto">
         <div className="w-full md:w-3/4 z-30 ">
           <Counter />
-          <div className=" font-bold text-white my-5 w-full" style={{fontSize:'16px'}}>
+          <div className=" font-bold text-white my-auto w-full text-lg lg:text-2xl">
             <div>
               AWS Community Day&nbsp;
               <span className="font-black" style={{ color: "#00b4fc" }}>
@@ -50,7 +50,7 @@ function Home() {
               </span>
             </div>
           </div>
-          <div className="font-medium text-white my-2 italic md:pr-40" style={{fontSize:'12px'}}>
+          <div className="font-medium text-white my-2 italic md:pr-40 text-sm md:text-xl">
             {description}
           </div>
           <div className="md:sm md:text-xl font-medium text-white italic mt-5 mb-5" style={{fontSize:'12px'}}>
