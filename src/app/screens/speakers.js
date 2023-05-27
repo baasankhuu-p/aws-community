@@ -8,7 +8,7 @@ function Speakers() {
       "Senior Developer Advocate at AWS",
       "./speakers/1.png",
       "Learn more",
-      "Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem",
+      "Throughout his professional journey, Viktor has thrived in various roles, including those of a developer, systems engineer, and Systems Architect. He adeptly merged the responsibilities of a system architect and engineer for an extended period, focusing on Kubernetes-based projects. Whenever the opportunity arises, he generously imparts knowledge through speeches, audio recordings, and video podcasts, enriching the tech community with his expertise.",
     ],
     [
       "Almas Moldakanov",
@@ -22,21 +22,25 @@ function Speakers() {
       "Solutions Architect at AWS | 5x AWS Certified | ex-EPAM | ex-Google",
       "./speakers/3.png",
       "Learn more",
-      "Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem",
+      "Egor embarked on his professional journey as a hardware engineer, specializing in the optimization and repair of mobile phones. Over the course of his career, he has occupied diverse positions, such as engineer, solutions architect, and product manager, contributing to intricate projects across the globe. Presently, Egor serves as a Solutions Architect at AWS, leveraging his expertise to assist businesses in CEA (Central and Eastern Europe) and Ukraine, facilitating the construction of streamlined cloud infrastructures.",
     ],
     [
       "Ganjiguur Natsagdorj",
-      "Co-Founder at FIBO CLOUD",
+      "Co-Founder Fibo",
       "./speakers/4.png",
       "Learn more",
       "Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem",
     ],
-    ["Gundsambuu",
-    "#",
+    ["Tsengel",
+    "Co-founder and CTO at CODY, Co-founder of Intelmind.",
     "./speakers/5.png",
     "Learn more",
-    "#",],
-    [],
+    "As an experienced Developer, I have built a solid track record in the information technology and services industry. My skill set includes expertise in Ruby on Rails, HTML, JavaScript, JSON, and Redux.js. I possess a strong foundation in computer software engineering, having obtained a Bachelor's degree with a focus on this field from Mongolia University of Science and Technology. With a combination of technical proficiency and practical experience, I am well-equipped to tackle complex software development projects and contribute to the success of any team or organization.",],
+    ["Gundsambuu",
+    "Senior Developer at Unimedia Solutions LLC",
+    "./speakers/6.png",
+    "Learn more",
+    "Since 2009, my professional journey has encompassed diverse roles within the technology industry. I have worked as a web and application developer, a database administrator, a dev/ops engineer, and a solution architect. Throughout my career, I have made significant contributions to various projects and successfully created platforms such as cody.mn, shoppy.mn, and coinhub.mn. These projects reflect my expertise in developing web applications, managing databases, and designing robust solutions.",],
   ];
 
   const [detailsmodal, setdetailsModal] = useState(false);
@@ -111,10 +115,10 @@ function Speakers() {
       {detailsmodal && speaker && (
         <>
           <div
-            className=" fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center z-40"
+            className="fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center z-40"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
           >
-            <div className=" relative bg-black p-5 rounded z-50 mx-1 md:w-2/3 h-1/2 border-2 border-primary flex flex-col justify-center items-start text-white">
+            <div className=" relative bg-black p-5 rounded z-50 mx-1 md:w-2/3 h-3/4 border-2 border-primary flex flex-col justify-center items-start text-white">
               <IoMdCloseCircleOutline
                 className="w-10 h-10 text-slate-400 hover:text-white cursor-pointer absolute right-5 top-5"
                 onClick={closeModal}
