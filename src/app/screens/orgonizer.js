@@ -4,11 +4,8 @@ import React from "react";
 function Organize() {
   let organizes = [
     ["Fibo", require("../assets/img/organize/logo_fibo.png")],
-    [
-      "cloud community ulaanbaatar",
-      require("../assets/img/organize/cloud_logo.png"),
-    ],
     ["cloud academy", require("../assets/img/organize/cloud_academy_logo.png")],
+    ["cloud academy", require("../assets/img/organize/aws_user.png")],
   ];
 
   return (
@@ -21,7 +18,7 @@ function Organize() {
           <Image
             src={url}
             alt={title}
-            className="my-2 rounded-sm mx-4"
+            className="my-2 rounded-sm mx-4 "
             style={{width:'280px' ,height:'auto'}}
             key={index}
           />

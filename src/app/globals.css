@@ -1,20 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@media (min-width: 1280px) {
-  section {
-    /* padding-left: 5rem;
-        padding-right: 5rem; */
-  }
-}
 .shadow-speaker {
   --tw-shadow: 0 0 0 2px rgb(223, 151, 44);
   --tw-shadow-colored: 0 0 0 2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-
+.content-shadow {
+  box-shadow: rgb(223, 151, 44) 0px 9px 20px,
+    rgba(223, 151, 44, 0.4) 10px 10px 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 @media (min-width: 768px) {
   .shadow-home {
     box-shadow: rgb(223, 151, 44) 0px 9px 20px,
