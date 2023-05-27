@@ -76,18 +76,6 @@
     width: 250px;
     height: auto;
   }
-}
-.contructbg{
-  background-color: rgba(0, 0, 0, 0.8);
-}
-@media (min-width: 1024px) {
-  .headernav{
-    font-size: 20px;
-  }
-  .din_eve{
-    width: 250px;
-    height: auto;
-  }
   .contructbg{
     z-index: 0;
     overflow: hidden;
@@ -97,6 +85,16 @@
     background-repeat: no-repeat,
   }
 }
+
+@media (min-width: 1024px) {
+  .headernav{
+    font-size: 20px;
+  }
+  .din_eve{
+    width: 250px;
+    height: auto;
+  }
+}
 @media (min-width: 1240px) {
   .headernav{
     font-size: 24px;
@@ -104,6 +102,11 @@
   .din_eve{
     width: 350px;
     height: auto;
+  }
+}
+@media (max-width:760px) {
+  .contructbg{
+    background-color: rgba(0, 0, 0, 0.8);
   }
 }
 .custom-shadow{
