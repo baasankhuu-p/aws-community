@@ -51,7 +51,7 @@ function Speakers() {
       "Since 2009, my professional journey has encompassed diverse roles within the technology industry. I have worked as a web and application developer, a database administrator, a dev/ops engineer, and a solution architect. Throughout my career, I have made significant contributions to various projects and successfully created platforms such as cody.mn, shoppy.mn, and coinhub.mn. These projects reflect my expertise in developing web applications, managing databases, and designing robust solutions.",
       "https://www.linkedin.com/in/gundsambuu/",
     ],
-    [null, null, null, null, null],
+    ["Bayar", "Callpro", null, null, null],
   ];
 
   const [detailsmodal, setdetailsModal] = useState(false);
