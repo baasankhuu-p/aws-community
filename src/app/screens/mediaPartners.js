@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-export default function Techpartners() {
+export default function Mediapartners() {
     let techpartner = [
         ["Tenger tv", require("../assets/img/organize/tenger.png")]
       ];
@@ -8,7 +8,7 @@ export default function Techpartners() {
     <>
       <div className="mt-10 md:mt-20 mx-2 lg:mx-30">
         <div className=" text-white text-center text-4xl xl:text-5xl font-bold">
-          Tech partners
+          Media partner
         </div>
         <div className="flex flex-row justify-center flex-wrap">
           {techpartner.map(([title, url], index) => (
