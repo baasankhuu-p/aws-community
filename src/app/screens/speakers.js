@@ -5,7 +5,7 @@ function Speakers() {
   const speacker_info = [
     [
       "Victor Vedmich",
-      "Senior Developer Advocate at AWS",
+      "Senior Developer Advocate at AWS (Munich, Germany)",
       "./speakers/1.png",
       "Learn more",
       "Throughout his professional journey, Viktor has thrived in various roles, including those of a developer, systems engineer, and Systems Architect. He adeptly merged the responsibilities of a system architect and engineer for an extended period, focusing on Kubernetes-based projects. Whenever the opportunity arises, he generously imparts knowledge through speeches, audio recordings, and video podcasts, enriching the tech community with his expertise.",
@@ -13,7 +13,7 @@ function Speakers() {
     ],
     [
       "Almas Moldakanov",
-      "Territory Manager at Amazon Web Services",
+      "Territory Manager at AWS",
       "./speakers/2.png",
       "Learn more",
       "Almas is an accomplished business development professional with a strong focus on achieving results. With over 10 years of experience in high-tech international companies and startups, he has honed his skills in driving business growth. Almas has had the privilege of being recognized as a Speaker at prestigious events such as the Harvard College Project for Asian and International Relations (HPAIR) 2019 and the AISEC Top Talents Almaty project, showcasing his expertise and thought leadership in the industry.",
@@ -21,7 +21,7 @@ function Speakers() {
     ],
     [
       "Egor Miasnikov",
-      "Solutions Architect at AWS | 5x AWS Certified | ex-EPAM | ex-Google",
+      " Solutions Architect at AWS",
       "./speakers/3.png",
       "Learn more",
       "Egor embarked on his professional journey as a hardware engineer, specializing in the optimization and repair of mobile phones. Over the course of his career, he has occupied diverse positions, such as engineer, solutions architect, and product manager, contributing to intricate projects across the globe. Presently, Egor serves as a Solutions Architect at AWS, leveraging his expertise to assist businesses in CEA (Central and Eastern Europe) and Ukraine, facilitating the construction of streamlined cloud infrastructures.",
