@@ -12,7 +12,6 @@ const social_links = [
   ["YouTube", "https://www.youtube.com/@cloud.community/videos"],
   ["Facebook ", "https://www.facebook.com/cloud.community.ulaanbaatar"],
   ["Instagram", "https://www.instagram.com/cloud.community.ub/"],
-  ["YouTube ", "https://www.youtube.com/@cloud.community/videos"],
   ["Discord ", "https://discord.gg/F7tUDKQaQ8"],
 ];
 function Footer() {
