@@ -37,7 +37,7 @@ function Speakers() {
     ],
     [
       "Tsengel Enkhbat",
-      "Co-founder and CTO at CODY, Co-founder of Intelmind.",
+      "Senior Developer at Unimedia Solutions LLC",
       "./speakers/5.png",
       "Learn more",
       "As an experienced Developer, I have built a solid track record in the information technology and services industry. My skill set includes expertise in Ruby on Rails, HTML, JavaScript, JSON, and Redux.js. I possess a strong foundation in computer software engineering, having obtained a Bachelor's degree with a focus on this field from Mongolia University of Science and Technology. With a combination of technical proficiency and practical experience, I am well-equipped to tackle complex software development projects and contribute to the success of any team or organization.",
@@ -45,7 +45,7 @@ function Speakers() {
     ],
     [
       "Gundsambuu Natsagdorj",
-      "Senior Developer at Unimedia Solutions LLC",
+      "Co-founder and CTO at CODY, Co-founder of Intelmind.",
       "./speakers/6.png",
       "Learn more",
       "Since 2009, my professional journey has encompassed diverse roles within the technology industry. I have worked as a web and application developer, a database administrator, a dev/ops engineer, and a solution architect. Throughout my career, I have made significant contributions to various projects and successfully created platforms such as cody.mn, shoppy.mn, and coinhub.mn. These projects reflect my expertise in developing web applications, managing databases, and designing robust solutions.",
