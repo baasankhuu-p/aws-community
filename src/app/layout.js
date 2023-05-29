@@ -14,15 +14,9 @@ export default function RootLayout({ children }) {
   return (
     <UserStore>
       <html lang="en">
-        <meta
-          property="og:url"
-          content="https://2023.awsmongolia.com/"
-        />
+        <meta property="og:url" content="https://2023.awsmongolia.com/" />
         <meta property="og:type" content="article" />
-        <meta
-          property="og:title"
-          content="AWS Community"
-        />
+        <meta property="og:title" content="AWS Community" />
         <meta
           property="og:description"
           content="At this event, you can have dinner with influential Mongolian and foreign IT representatives. You'll also receive valuable guidance from respected experts, both local and international."
@@ -31,6 +25,18 @@ export default function RootLayout({ children }) {
           property="og:image"
           content="https://2023.awsmongolia.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Faws_logo.0fe796af.png&w=640&q=75"
         />
+        <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-123456789', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
+          />
         <body className={inter.className} style={{ margin: 0, padding: 0 }}>
           {children}
         </body>
