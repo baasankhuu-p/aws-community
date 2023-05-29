@@ -9,24 +9,12 @@ import Location from "./screens/location";
 import Footer from "./screens/footer";
 import Organize from "./screens/orgonizer";
 import Mediapartners from "./screens/mediaPartners";
+import { GoogleAnalytics } from "nextjs-google-analytics";
 
 export default function Page() {
   return (
     <div className="bg-black min-h-screen min-w-full">
-    <Script
-      id='google-analytics'
-      strategy="afterInteractive"
-      dangerouslySetInnerHTML={{
-        __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'UA-214515501-1', {
-            page_path: window.location.pathname,
-          });
-        `,
-        }}
-    />
+      <GoogleAnalytics trackPageViews />
       {/*  bg-defbggray */}
       <Header />
       <>
