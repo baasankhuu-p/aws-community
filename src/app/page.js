@@ -9,7 +9,6 @@ import Location from "./screens/location";
 import Footer from "./screens/footer";
 import Organize from "./screens/orgonizer";
 import Mediapartners from "./screens/mediaPartners";
-import { GoogleAnalytics } from "nextjs-google-analytics";
 
 export default function Page() {
   return (
