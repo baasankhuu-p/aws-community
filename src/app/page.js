@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Header from "./component/Header";
 import Home from "./screens/home";
 import About from "./screens/about";
@@ -9,30 +9,28 @@ import Location from "./screens/location";
 import Footer from "./screens/footer";
 import Organize from "./screens/orgonizer";
 import Mediapartners from "./screens/mediaPartners";
-import { GoogleAnalytics } from "nextjs-google-analytics";
-
+import ReactGA from 'react-ga';
+import { useEffect } from "react";
 export default function Page() {
+  ReactGA.initialize('UA-214515501-1');
+  useEffect(()=>{
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  },[])
   return (
     <div className="bg-black min-h-screen min-w-full">
-      <GoogleAnalytics trackPageViews />
       {/*  bg-defbggray */}
       <Header />
       <>
-        <section
-          className='home-bg'
-        >
+        <section className="home-bg">
           <Home />
-          {/* <Dinner /> */}
         </section>
         <About />
         <Schedule />
         <Speakers />
 
-        <section
-        className='sponsor-bg'
-        >
+        <section className="sponsor-bg">
           <Sponsors />
-          <Mediapartners/>
+          <Mediapartners />
           <Organize />
         </section>
         <Location />
