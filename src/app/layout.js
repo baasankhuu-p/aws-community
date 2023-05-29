@@ -25,18 +25,6 @@ export default function RootLayout({ children }) {
           property="og:image"
           content="https://2023.awsmongolia.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Faws_logo.0fe796af.png&w=640&q=75"
         />
-        <script
-            dangerouslySetInnerHTML={{
-              __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-214515501-1', {
-              page_path: window.location.pathname,
-            });
-          `,
-            }}
-          />
         <body className={inter.className} style={{ margin: 0, padding: 0 }}>
           {children}
         </body>
