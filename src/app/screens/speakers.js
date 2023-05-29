@@ -28,12 +28,12 @@ function Speakers() {
       "https://www.linkedin.com/in/miasnikov/",
     ],
     [
-      "Ganjiguur Natsagdorj",
-      "Co-Founder Fibo",
+      "Darkhanbayar Erdenebat",
+      "CTO FIBO CLOUD",
       "./speakers/4.png",
       "Learn more",
-      "As the Co-Founder of Fibo Cloud, a prominent cloud native services development company, I spearhead and oversee the execution of the most intricate and challenging technology projects. Our company specializes in leveraging cloud technologies to create innovative solutions for our clients. With a strong focus on delivering cutting-edge services, we tackle complex projects that require expertise in cloud-native architecture, scalable infrastructure, and advanced technologies. At Fibo Cloud, our mission is to lead the way in revolutionizing the technology landscape by providing exceptional services and driving the success of our clients' most demanding ventures.",
-      "https://www.linkedin.com/in/ganjiguurn/",
+      "As the CTO of Fibo Cloud, a prominent cloud native services development company, I spearhead and oversee the execution of the most intricate and challenging technology projects. Our company specializes in leveraging cloud technologies to create innovative solutions for our clients. With a strong focus on delivering cutting-edge services, we tackle complex projects that require expertise in cloud-native architecture, scalable infrastructure, and advanced technologies. At Fibo Cloud, our mission is to lead the way in revolutionizing the technology landscape by providing exceptional services and driving the success of our clients' most demanding ventures.",
+      "https://www.linkedin.com/in/darkhanbayar-erdenebat/",
     ],
     [
       "Tsengel Enkhbat",
