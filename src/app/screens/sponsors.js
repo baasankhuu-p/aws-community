@@ -5,11 +5,7 @@ function Sponsors() {
     ["aws_logo", require("../assets/img/sponsors/aws_logo.png")],
     ["apnic-logo", require("../assets/img/sponsors/apnic-logo.png")],
     ["fibo", require("../assets/img/sponsors/logo_fibo.png")],
-  ];
-  const techpartner = [
-    ["aws_logo", require("../assets/img/sponsors/aws_logo.png")],
-    ["apnic-logo", require("../assets/img/sponsors/apnic-logo.png")],
-    ["fibo", require("../assets/img/sponsors/logo_fibo.png")],
+    ["tech-partner", require("../assets/img/organize/tech-partners.png")],
   ];
   return (
     <>
