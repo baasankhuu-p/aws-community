@@ -14,8 +14,21 @@ import { GoogleAnalytics } from "nextjs-google-analytics";
 export default function Page() {
   return (
     <div className="bg-black min-h-screen min-w-full">
+    <Script
+      id='google-analytics'
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-VZ10786RJP', {
+            page_path: window.location.pathname,
+          });
+        `,
+        }}
+    />
       {/*  bg-defbggray */}
-      <GoogleAnalytics trackPageViews={{ ignoreHashChange: true }} />
       <Header />
       <>
         <section
