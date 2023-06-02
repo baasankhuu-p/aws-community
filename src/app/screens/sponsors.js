@@ -20,6 +20,7 @@ function Sponsors() {
                 src={url}
                 alt={title}
                 style={{ width: "280px", height: "auto" }}
+                className=" rounded-lg"
               />
             </div>
           ))}

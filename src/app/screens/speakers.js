@@ -51,7 +51,18 @@ function Speakers() {
       "Since 2009, my professional journey has encompassed diverse roles within the technology industry. I have worked as a web and application developer, a database administrator, a dev/ops engineer, and a solution architect. Throughout my career, I have made significant contributions to various projects and successfully created platforms such as cody.mn, shoppy.mn, and coinhub.mn. These projects reflect my expertise in developing web applications, managing databases, and designing robust solutions.",
       "https://www.linkedin.com/in/gundsambuu/",
     ],
-    ["Bayar", "Callpro", null, null, null],
+    [
+      "Bayar",
+      "Callpro",
+      "./speakers/7.png",
+      "Learn more",
+      `With over a decade of experience in web-based systems and cloud technology, I specialize in database structure and DevOps practices. I have a deep understanding of designing and optimizing database architectures, ensuring data integrity, and improving performance.
+
+    In the DevOps realm, I excel in implementing CI/CD pipelines, automating infrastructure provisioning using AWS CloudFormation, and leveraging containerization technologies like Docker and Kubernetes.
+    
+    I am well-versed in AWS cloud-native database services such as Amazon RDS, Amazon DynamoDB, and Amazon Redshift. I can provide valuable insights on effective database design principles, performance optimization strategies, and best practices for implementing DevOps methodologies in web-based systems and cloud environments. Expect real-world examples and practical tips to enhance attendees' understanding and proficiency.`,
+    'https://www.linkedin.com/in/bayar-udval-33719153/?originalSubdomain=mn'
+    ],
   ];
 
   const [detailsmodal, setdetailsModal] = useState(false);
@@ -83,39 +94,43 @@ function Speakers() {
             key={index}
             className=" relative flex aspect-square flex-col items-start justify-between p-2 shadow-speaker"
           >
-            {el[5] && <a href={el[5]} className="z-20 absolute  right-1 top-1">
-              {" "}
-              <IoLogoLinkedin
-                style={{ color: "#0072b1" }}
-                className="w-8 h-8 bg-white rounded"
-              />{" "}
-            </a>}
-              <img
-                src={el[2]?el[2]:'./speakers/empty.png'}
-                style={{
-                  position: "absolute",
-                  inset: "0px",
-                  boxSizing: "border-box",
-                  padding: "0px",
-                  border: "none",
-                  display: "block",
-                  minWidth: "100%",
-                  maxWidth: "100%",
-                  minHeight: "100%",
-                  maxHeight: "100%",
-                  objectFit: "cover",
-                  bottom: 0,
-                  right: 0,
-                }}
-                alt={`speakers ${el[0]}`}
-              />
+            {el[5] && (
+              <a href={el[5]} className="z-20 absolute  right-1 top-1">
+                {" "}
+                <IoLogoLinkedin
+                  style={{ color: "#0072b1" }}
+                  className="w-8 h-8 bg-white rounded"
+                />{" "}
+              </a>
+            )}
+            <img
+              src={el[2] ? el[2] : "./speakers/empty.png"}
+              style={{
+                position: "absolute",
+                inset: "0px",
+                boxSizing: "border-box",
+                padding: "0px",
+                border: "none",
+                display: "block",
+                minWidth: "100%",
+                maxWidth: "100%",
+                minHeight: "100%",
+                maxHeight: "100%",
+                objectFit: "cover",
+                bottom: 0,
+                right: 0,
+              }}
+              alt={`speakers ${el[0]}`}
+            />
             <div className="text-white relative z-[1] flex h-full flex-col w-full items-start justify-end">
               <div
-                className={`${(el[0]||el[1]) && 'bg-black w-full p-2  content-shadow'}`}
+                className={`${
+                  (el[0] || el[1]) && "bg-black w-full p-2  content-shadow"
+                }`}
               >
                 <div>
                   <h5 className=" text-sm font-bold lg:text-xl">{el[0]}</h5>
-                  <p className="mt-1 text-xs lg:text-sm capitalize">{el[1]}</p>
+                  <p className="mt-1 lg:text-sm capitalize">{el[1]}</p>
                 </div>
                 {el[3] && (
                   <button
@@ -146,11 +161,17 @@ function Speakers() {
               <div className="text-xl md:text-3xl font-bold pt-2">
                 {speaker[0]}
               </div>
-              <span className="italic font-normal py-2 md:text-2xl">" {speaker[1]} "</span>
+              <span className="italic font-normal py-2 md:text-2xl">
+                " {speaker[1]} "
+              </span>
               <div className="w-auto h-1/2 md:h-3/4 md:mt-5 flex flex-col md:flex-row items-center ">
-                <img src={speaker[2]} className="w-auto h-32 rounded-xl md:h-full" alt={speaker[0]}/>
-                <div className="md:mx-2 lg:mx-5 ">
-                  <div className="text-sm md:text-lg lg:2xl">{speaker[4]}</div>
+                <img
+                  src={speaker[2]}
+                  className="w-auto h-32 rounded-xl md:h-full"
+                  alt={speaker[0]}
+                />
+                <div className="md:mx-1 lg:mx-5">
+                  <div className=" text-xs md:text-lg lg:2xl">{speaker[4]}</div>
                 </div>
               </div>
             </div>

@@ -3,14 +3,14 @@ import React, { useContext, useEffect, useState } from "react";
 import UserContext from "../context/context"; 
 const con_en = [
   ["12:00 - 12:30","Registration And Foods"],
-  ["12:30 - 12:50","FIBO Scholarship"],
-  ["12:50 - 13:00","Opening Welcome Moldakanov  @Amazon Web Service"],
-  ["13:00 - 13:30","AWS Firecracker technical fundamentals Erdenebat Darkhanbayar @FIBO Cloud"],
-  ["13:30 - 14:00","GenAI on AWS, options and demo - Egor Miasnikov @Amazon Web Services"],
-  ["14:00- 14:30","Chaos Engineering - Viktor Vedmich @Amazon Web Services"],
-  ["14:30 - 14:50","Cody aka Shoppy.mn System Architecture - Natsagdorj Gundsambuu @Intelmind"],
-  ["14:50 - 15:10","AWS Eventbridge - Enkhbat Tsengel @Unimedia Solutions"],
-  ["15:10 - 15:30","AWS Empowered MessagePro's Development - Udval .Bayar @Callpro"],
+  ["12:30 - 12:50","Sponsor's time"],
+  ["12:50 - 13:00","Opening Welcome - Almas Moldakanov - Territory Manager @Amazon Web Service"],
+  ["13:00 - 13:30","AWS Firecracker Technical Fundamentals - E.Darkhanbayar - CTO @Fibo Cloud"],
+  ["13:30 - 14:00","GenAI on AWS, Options and Demo - Egor Miasnikov - Solutions Architect @Amazon Web Services"],
+  ["14:00- 14:30","Chaos Engineering - Victor Vedmich - Senior Developer Advocate @Amazon Web Services"],
+  ["14:30 - 14:50","Cody aka Shoppy.mn System Architecture - N.Gundsambuu - CTO @Intelmind Group"],
+  ["14:50 - 15:10","AWS Eventbridge - E.Tsengel - Senior Developer @Unimedia Solutions"],
+  ["15:10 - 15:30","AWS Empowered MessagePro's Development - U.Bayar - CTO @CallPro"],
   ["15:30 - 16:00","Kahoot Quiz Prizes / Closing Address / Photograph"],
 ];
 function Schedule() {
