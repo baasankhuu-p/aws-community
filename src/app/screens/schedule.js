@@ -2,7 +2,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import UserContext from "../context/context"; 
 const con_en = [
-  ["12:00 - 12:50","Registration and Foods"],
+  ["12:00 - 12:50","Registration and Foods "],
   ["12:50 - 13:00","Opening Welcome Almas Moldakanov  @Amazon Web Service"],
   ["13:00 - 13:30","AWS Firecracker technical fundamentals"],
   ["13:30 - 14:00","GenAI on AWS, options and demo - Egor Miasnikov @Amazon Web Services"],
