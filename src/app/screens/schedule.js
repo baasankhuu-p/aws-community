@@ -2,29 +2,21 @@
 import React, { useContext, useEffect, useState } from "react";
 import UserContext from "../context/context"; 
 const con_en = [
-  ["12:00 - 12:50","Registration and Foods "],
-  ["12:50 - 13:00","Opening Welcome Almas Moldakanov  @Amazon Web Service"],
-  ["13:00 - 13:30","AWS Firecracker technical fundamentals"],
+  ["12:00 - 12:30","Registration And Foods"],
+  ["12:30 - 12:50","FIBO Scholarship"],
+  ["12:50 - 13:00","Opening Welcome Moldakanov  @Amazon Web Service"],
+  ["13:00 - 13:30","AWS Firecracker technical fundamentals Erdenebat Darkhanbayar @FIBO Cloud"],
   ["13:30 - 14:00","GenAI on AWS, options and demo - Egor Miasnikov @Amazon Web Services"],
-  ["14:00- 14:30","Chaos engineering - Viktor Vedmich @Amazon Web Services"],
-  ["14:30 - 14:50","AWS Eventbridge - Tsengel @Unimedia Solutions"],
-  ["14:50 - 15:10","Topic will be determined - Bayar @Callpro"],
-  ["15:10 - 15:30","Cody aka Shoppy.mn system architecture - Gundsambuu @Intelmind"],
-  ["15:30 - 16:00","Kahoot Quiz Prizes Closing Address Photography"],
-];
-const con_mn = [
-];
-const dinner_en = [
-];
-const dinner_mn = [
+  ["14:00- 14:30","Chaos Engineering - Viktor Vedmich @Amazon Web Services"],
+  ["14:30 - 14:50","Cody aka Shoppy.mn System Architecture - Natsagdorj Gundsambuu @Intelmind"],
+  ["14:50 - 15:10","AWS Eventbridge - Enkhbat Tsengel @Unimedia Solutions"],
+  ["15:10 - 15:30","AWS Empowered MessagePro's Development - Udval .Bayar @Callpro"],
+  ["15:30 - 16:00","Kahoot Quiz Prizes / Closing Address / Photograph"],
 ];
 function Schedule() {
   const [visibleVal, setvisibleVal] = useState("CONFERENCE");
   const [visibleCon, setVisibleCon] = useState(con_en);
   const [visibleDin, setVisibleDin] = useState(null);
-  const handlerVisible = (newVisible) => {
-    setvisibleVal(newVisible);
-  };
   const state = useContext(UserContext);
 
   useEffect(() => {
