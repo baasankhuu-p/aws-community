@@ -53,7 +53,7 @@ function Speakers() {
     ],
     [
       "Bayar",
-      "Callpro CIO",
+      "Chief Information Officer at CallPro",
       "./speakers/7.png",
       "Learn more",
       `With over a decade of experience in web-based systems and cloud technology, I specialize in database structure and DevOps practices. I have a deep understanding of designing and optimizing database architectures, ensuring data integrity, and improving performance.
